@@ -4,6 +4,7 @@ export const jobs: ExperienceItem[] = [
 	{
 		company: 'Flowcode',
 		website: { href: 'https://www.flowcode.com/', text: 'flowcode.com' },
+		location: 'New York, NY',
 		title: 'Senior Software Engineer II',
 		startDate: new Date('2022-09-26'),
 		endDate: 'current',
@@ -17,6 +18,7 @@ export const jobs: ExperienceItem[] = [
 	{
 		company: 'Primary Kids, Inc.',
 		website: { href: 'https://www.primary.com/', text: 'primary.com' },
+		location: 'New York, NY',
 		title: 'Senior Software Engineer',
 		startDate: new Date('2021-06-12'),
 		endDate: new Date('2022-09-23'),
@@ -31,6 +33,7 @@ export const jobs: ExperienceItem[] = [
 	{
 		company: 'Primary Kids, Inc.',
 		website: { href: 'https://www.primary.com/', text: 'primary.com' },
+		location: 'New York, NY',
 		title: 'Software Engineer',
 		startDate: new Date('2019-08-12'),
 		endDate: new Date('2021-06-11'),
@@ -43,6 +46,7 @@ export const jobs: ExperienceItem[] = [
 	{
 		company: 'The Public Theater',
 		website: { href: 'https://hwap.anderapps.com', text: 'HWAP App' },
+		location: 'Brooklyn, NY (remote)',
 		title: 'Contract Software Engineer',
 		startDate: new Date('2021-08-12'),
 		endDate: new Date('2022-06-12'),
@@ -55,6 +59,7 @@ export const jobs: ExperienceItem[] = [
 	{
 		company: 'Sensory Interactive',
 		website: { href: 'https://vimeo.com/639565861', text: 'Video of in-lobby display' },
+		location: 'Brooklyn, NY (remote)',
 		title: 'Contract Software Engineer',
 		startDate: new Date('2021-06-07'),
 		endDate: new Date('2021-07-30'),
@@ -66,6 +71,7 @@ export const jobs: ExperienceItem[] = [
 	{
 		company: 'StreetSmarts, LLC',
 		title: 'Co-Founder and CTO',
+		location: 'Brooklyn, NY (remote)',
 		startDate: new Date('2018-04-01'),
 		endDate: new Date('2021-06-21'),
 		bulletPoints: [
@@ -78,6 +84,7 @@ export const jobs: ExperienceItem[] = [
 	{
 		company: 'Just the Right Piece, LLC',
 		title: 'Contract Software Engineer',
+		location: 'Salem, NH',
 		startDate: new Date('2016-03-01'),
 		endDate: new Date('2019-01-01'),
 		bulletPoints: [
@@ -88,6 +95,7 @@ export const jobs: ExperienceItem[] = [
 	{
 		company: 'Promoboxx',
 		website: { href: 'https://www.promoboxx.com/', text: 'promoboxx.com' },
+		location: 'Boston, MA',
 		title: 'Software Engineer',
 		startDate: new Date('2015-05-20'),
 		endDate: new Date('2018-07-18'),
@@ -102,6 +110,7 @@ export const jobs: ExperienceItem[] = [
 	{
 		company: 'Launch Academy',
 		website: { href: 'https://www.launchacademy.com/', text: 'launchacademy.com' },
+		location: 'Boston, MA',
 		title: 'Ruby on Rails Apprentice',
 		startDate: new Date('2015-02-01'),
 		endDate: new Date('2015-04-01'),

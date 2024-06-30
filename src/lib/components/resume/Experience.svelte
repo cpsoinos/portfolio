@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Icon from '@iconify/svelte';
 	import type { ExperienceItem } from './types';
 
 	export let items: ExperienceItem[];
@@ -12,13 +13,19 @@
 	<div class="flex flex-col gap-4">
 		{#each items as item (item.startDate.toISOString())}
 			<div>
-				<h3 class="text-lg uppercase text-gray-700 print:text-sm">
-					{#if item.website}
-						<a href={item.website.href} target="_blank">{item.company}</a>
-					{:else}
-						{item.company}
-					{/if}
-				</h3>
+				<div class="flex items-center justify-between gap-4">
+					<h3 class="text-lg uppercase text-gray-700 print:text-sm">
+						{#if item.website}
+							<a href={item.website.href} target="_blank">{item.company}</a>
+						{:else}
+							{item.company}
+						{/if}
+					</h3>
+					<span class="text-xs text-gray-500 print:text-2xs">
+						<Icon icon="mdi:location" inline class="inline" />
+						{item.location}
+					</span>
+				</div>
 				<div class="text-md flex items-center justify-between">
 					<span class="text-sm text-indigo-600 print:text-xs">{item.title}</span>
 					<span class="text-xs text-indigo-600 print:text-2xs">

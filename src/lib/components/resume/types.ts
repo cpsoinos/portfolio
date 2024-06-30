@@ -7,6 +7,7 @@ export interface Link {
 export interface ExperienceItem {
 	company: string;
 	website?: Link;
+	location: string;
 	title: string;
 	startDate: Date;
 	endDate: Date | 'current';

@@ -26,14 +26,6 @@
 							</a>
 						{/each}
 					</div>
-					<!-- <a
-						href={item.website.href}
-						target="_blank"
-						class="flex items-center gap-1 text-sm text-indigo-600 print:text-xs"
-					>
-						{item.website.text}
-						<Icon icon="mdi:open-in-new" class="inline print:hidden" inline />
-					</a> -->
 				{/if}
 				{#if item.description}
 					<p class="text-sm print:text-2xs print:leading-normal">
