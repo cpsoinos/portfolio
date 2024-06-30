@@ -6,11 +6,13 @@
 </script>
 
 <div class="flex flex-col gap-2">
-	<h2 class="uppercase text-gray-500 print:text-xs">{sectionTitle}</h2>
+	<h2 class="border-t-2 border-indigo-600 bg-gray-50 p-1 uppercase text-gray-500 print:text-xs">
+		{sectionTitle}
+	</h2>
 	<div class="flex flex-col gap-4">
 		{#each items as item (item.startDate.toISOString())}
 			<div>
-				<h3 class="text-lg uppercase text-gray-900 print:text-sm">
+				<h3 class="text-lg uppercase text-gray-700 print:text-sm">
 					{#if item.website}
 						<a href={item.website.href} target="_blank">{item.company}</a>
 					{:else}
@@ -18,8 +20,8 @@
 					{/if}
 				</h3>
 				<div class="text-md flex items-center justify-between">
-					<span class="text-sm text-gray-700 print:text-xs">{item.title}</span>
-					<span class="text-xs text-gray-500 print:text-2xs">
+					<span class="text-sm text-indigo-600 print:text-xs">{item.title}</span>
+					<span class="text-xs text-indigo-600 print:text-2xs">
 						{item.startDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} - {item.endDate ===
 						'current'
 							? 'current'

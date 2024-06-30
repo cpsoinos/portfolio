@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	@font-face {
+		font-family: 'Arial Narrow';
+		font-style: normal;
+		font-weight: 400;
+		font-display: swap;
+		src: url('$lib/assets/fonts/arialnarrow.ttf') format('ttf');
+	}
+
+	@font-face {
+		font-family: 'Arial Narrow';
+		font-style: normal;
+		font-weight: 700;
+		font-display: swap;
+		src: url('$lib/assets/fonts/arialnarrow_bold.ttf') format('ttf');
+	}
+
+	@font-face {
+		font-family: 'Arial Narrow';
+		font-style: italic;
+		font-weight: 400;
+		font-display: swap;
+		src: url('$lib/assets/fonts/arialnarrow_italic.ttf') format('ttf');
+	}
+
+	@font-face {
+		font-family: 'Arial Narrow';
+		font-style: italic;
+		font-weight: 700;
+		font-display: swap;
+		src: url('$lib/assets/fonts/arialnarrow_bolditalic.ttf') format('ttf');
+	}
+}
+
 .wysiwyg {
 	a {
 		@apply hover:underline;

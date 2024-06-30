@@ -22,18 +22,21 @@
 
 <div class="flex justify-between border-t-8 border-indigo-600 bg-gray-100 p-4">
 	<div class="flex flex-col gap-4">
-		<h1 class="text-2xl uppercase">{name}</h1>
-		<p>{location}</p>
+		<h1 class="font-display text-4xl uppercase">{name}</h1>
+		<p class="text-sm text-gray-700 print:text-xs">
+			<Icon icon="mdi:location" inline class="inline" />
+			{location}
+		</p>
 	</div>
 	<div class="flex flex-col items-end text-sm text-gray-700 print:text-xs">
 		{#each contact as { href, text, icon }}
-			{#if icon}<Icon {icon} class="inline" />{/if} <a {href} class="">{text}</a>
+			{#if icon}<Icon {icon} class="inline" inline />{/if} <a {href} class="">{text}</a>
 		{/each}
 		{#each links as { href, text, icon }}
 			<div class="flex items-center gap-1">
-				{#if icon}<Icon {icon} />{/if}<a {href} class="">{text}</a>
+				{#if icon}<Icon {icon} class="inline" inline />{/if}<a {href} class="">{text}</a>
 			</div>
 		{/each}
 	</div>
 </div>
-<p class="text-sm text-gray-700 print:text-2xs print:leading-normal">{summary}</p>
+<p class="font-body text-sm text-gray-700 print:text-2xs print:leading-normal">{summary}</p>
