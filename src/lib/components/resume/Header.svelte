@@ -19,11 +19,14 @@
 	<h1 class="text-2xl">{name}</h1>
 	<div class="flex gap-2 divide-x text-sm print:text-xs">
 		<span>{location}</span>
+		{#each contact as { href, text }}
+			<a {href} class="first:ps-0 ps-2 md:hidden md:print:inline">{text}</a>
+		{/each}
 		{#each links as { href, text }}
 			<a {href} class="ps-2">{text}</a>
 		{/each}
 	</div>
-	<div class="flex gap-2 divide-x text-sm print:text-xs">
+	<div class="gap-2 divide-x text-sm print:text-xs xs:hidden md:flex print:hidden">
 		{#each contact as { href, text }}
 			<a {href} class="first:ps-0 ps-2">{text}</a>
 		{/each}
