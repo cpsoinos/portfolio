@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { EducationItem } from './types';
+	import type { EducationItem } from '../../types';
 
 	export let items: EducationItem[];
 </script>

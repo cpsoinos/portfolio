@@ -6,10 +6,18 @@
 	import { education } from '$lib/components/resume/education';
 	import Education from '$lib/components/resume/Education.svelte';
 	import Projects from '$lib/components/resume/Projects.svelte';
+	import type { PageData } from './$types';
+
+	export let data: PageData;
 </script>
 
+<svelte:head>
+	<title>Resume | {data.user.name}</title>
+	<meta name="description" content={data.user.summary} />
+</svelte:head>
+
 <div class="flex flex-col gap-6">
-	<Header />
+	<Header user={data.user} />
 	<Experience items={jobs} />
 	{#if projects.length > 0}
 		<Projects items={projects} />
