@@ -10,7 +10,7 @@ export const jobs: ExperienceItem[] = [
 		bulletPoints: [
 			'Mentored junior engineers in React and agile processes',
 			'Led engineering initiative and collaborated closely with designers to create a new internal design system',
-			'Built the <a href="https://www.canva.com/apps/AAFIRwESLpI/flowcode-qr">Flowcode QR</a> app on Canva, driving over 50k new sign-ups that have created more than 120k QR codes with 1M+ total scans',
+			'Built the <a href="https://www.canva.com/apps/AAFIRwESLpI/flowcode-qr" target="_blank">Flowcode QR<span class="material-symbols--open-in-new ml-1 print:hidden"></span></a> app on Canva, driving over 50k new sign-ups that have created more than 120k QR codes with 1M+ total scans',
 			'Created an in-app image cropping tool, reducing time to create a conversion suite from 20 minutes to 2'
 		]
 	},

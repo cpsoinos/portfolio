@@ -8,7 +8,7 @@ export const projects: ExperienceItem[] = [
 		startDate: new Date('2021-06-01'),
 		endDate: new Date('2021-06-01'),
 		bulletPoints: [
-			'Developed an app to serve as a menu page and a calibration page for a lobby display using Next.js',
+			'Developed an app to serve as a menu page and a calibration page for a <a href="https://vimeo.com/639565861" target="_blank">lobby display<span class="material-symbols--open-in-new ml-1 print:hidden"></span></a> using NextJS',
 			'Heavily utilized SVGs and CSS animations to produce smooth transitions between angled displays'
 		]
 	},

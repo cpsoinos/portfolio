@@ -26,7 +26,7 @@
 			<a {href} class="ps-2">{text}</a>
 		{/each}
 	</div>
-	<div class="xs:hidden gap-2 divide-x text-sm md:flex print:hidden print:text-xs">
+	<div class="xs:hidden gap-2 divide-x text-sm text-gray-700 md:flex print:hidden print:text-xs">
 		{#each contact as { href, text }}
 			<a {href} class="ps-2 first:ps-0">{text}</a>
 		{/each}

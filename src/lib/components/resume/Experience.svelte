@@ -34,7 +34,7 @@
 					</p>
 				{/if}
 				{#if item.bulletPoints?.length}
-					<ul class="list-disc ps-4">
+					<ul class="wysiwyg list-disc ps-4">
 						{#each item.bulletPoints as bulletPoint}
 							<li class="text-sm text-gray-900 print:text-2xs print:leading-normal">
 								<!-- eslint-disable-next-line svelte/no-at-html-tags -->
