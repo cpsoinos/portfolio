@@ -1,4 +1,4 @@
-import type { ProjectItem } from '../../types';
+import type { ProjectItem } from '$lib/types';
 
 export const projects: ProjectItem[] = [
 	{

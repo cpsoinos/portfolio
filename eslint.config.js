@@ -3,12 +3,26 @@ import ts from 'typescript-eslint';
 import svelte from 'eslint-plugin-svelte';
 import prettier from 'eslint-config-prettier';
 import globals from 'globals';
+import importAlias from '@dword-design/eslint-plugin-import-alias';
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
 	js.configs.recommended,
 	...ts.configs.recommended,
 	...svelte.configs['flat/recommended'],
+	{
+		plugins: { '@dword-design/import-alias': importAlias },
+		rules: {
+			'@dword-design/import-alias/prefer-alias': [
+				'error',
+				{
+					alias: {
+						$lib: './src/lib'
+					}
+				}
+			]
+		}
+	},
 	prettier,
 	...svelte.configs['flat/prettier'],
 	{

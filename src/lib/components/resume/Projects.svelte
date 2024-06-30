@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-	import type { ProjectItem } from '../../types';
+	import type { ProjectItem } from '$lib/types';
 
 	export let items: ProjectItem[];
 </script>

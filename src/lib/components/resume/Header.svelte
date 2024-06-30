@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { User } from '../../types';
+	import type { User } from '$lib/types';
 	import Icon from '@iconify/svelte';
 
 	export let user: User;
