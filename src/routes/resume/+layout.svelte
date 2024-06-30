@@ -17,4 +17,8 @@
 			size: letter;
 		}
 	}
+
+	:global(html) {
+		@apply font-body;
+	}
 </style>

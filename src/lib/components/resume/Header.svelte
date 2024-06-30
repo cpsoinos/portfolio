@@ -39,4 +39,4 @@
 		{/each}
 	</div>
 </div>
-<p class="text-sm text-gray-700 print:text-2xs print:leading-normal">{summary}</p>
+<p class="font-body text-sm text-gray-700 print:text-2xs print:leading-normal">{summary}</p>
