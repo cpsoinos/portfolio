@@ -5,11 +5,14 @@
 	import { projects } from '$lib/components/resume/projects';
 	import { education } from '$lib/components/resume/education';
 	import Education from '$lib/components/resume/Education.svelte';
+	import Projects from '$lib/components/resume/Projects.svelte';
 </script>
 
 <div class="flex flex-col gap-6">
 	<Header />
 	<Experience items={jobs} sectionTitle="Work experience" />
-	<Experience items={projects} sectionTitle="Projects" />
+	{#if projects.length > 0}
+		<Projects items={projects} />
+	{/if}
 	<Education items={education} />
 </div>
