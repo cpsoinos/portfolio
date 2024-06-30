@@ -3,7 +3,9 @@
 </div>
 
 <style lang="postcss">
-	@page {
-		size: letter;
+	@media print {
+		@page {
+			size: letter;
+		}
 	}
 </style>

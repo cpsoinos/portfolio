@@ -17,15 +17,16 @@
 
 <div class="flex flex-col">
 	<h1 class="text-2xl">{name}</h1>
-	<div class="flex gap-2 divide-x print:text-xs">
+	<div class="flex gap-2 divide-x text-sm print:text-xs">
 		<span>{location}</span>
 		{#each links as { href, text }}
 			<a {href} class="ps-2">{text}</a>
 		{/each}
 	</div>
-	<div class="flex gap-2 divide-x print:text-xs">
+	<div class="flex gap-2 divide-x text-sm print:text-xs">
 		{#each contact as { href, text }}
 			<a {href} class="first:ps-0 ps-2">{text}</a>
 		{/each}
 	</div>
+	<p class="text-sm print:text-2xs print:leading-normal text-gray-700">{summary}</p>
 </div>
