@@ -4,6 +4,7 @@ import svelte from 'eslint-plugin-svelte';
 import prettier from 'eslint-config-prettier';
 import globals from 'globals';
 import importAlias from '@dword-design/eslint-plugin-import-alias';
+import oxlint from 'eslint-plugin-oxlint';
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
@@ -43,5 +44,6 @@ export default [
 	},
 	{
 		ignores: ['build/', '.svelte-kit/', 'dist/']
-	}
+	},
+	oxlint.configs['flat/recommended'] // oxlint should be the last one
 ];
