@@ -11,21 +11,20 @@
 	<div class="flex flex-col gap-4">
 		{#each items as item (item.startDate.toISOString())}
 			<div>
-				<div class="flex items-center gap-4">
-					<h3 class="text-lg uppercase print:text-sm">{item.company}</h3>
+				<h3 class="text-lg uppercase text-gray-900 print:text-sm">
 					{#if item.website}
-						<a href={item.website.href} class="text-sm text-gray-500 print:text-xs" target="_blank">
-							{item.website.text}
-						</a>
+						<a href={item.website.href} target="_blank">{item.company}</a>
+					{:else}
+						{item.company}
 					{/if}
-				</div>
-				<div class="text-md flex items-center gap-2 divide-x print:text-sm">
+				</h3>
+				<div class="text-md flex items-center justify-between">
 					<span class="text-sm text-gray-700 print:text-xs">{item.title}</span>
-					<span class="ps-2 text-sm text-gray-500 print:text-xs">
-						{item.startDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })} - {item.endDate ===
+					<span class="text-xs text-gray-500 print:text-2xs">
+						{item.startDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} - {item.endDate ===
 						'current'
 							? 'current'
-							: item.endDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
+							: item.endDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
 					</span>
 				</div>
 				{#if item.description}
@@ -37,7 +36,7 @@
 				{#if item.bulletPoints?.length}
 					<ul class="list-disc ps-4">
 						{#each item.bulletPoints as bulletPoint}
-							<li class="text-sm print:text-2xs print:leading-normal">
+							<li class="text-sm text-gray-900 print:text-2xs print:leading-normal">
 								<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 								{@html DOMPurify.sanitize(bulletPoint)}
 							</li>

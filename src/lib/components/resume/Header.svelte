@@ -2,7 +2,7 @@
 	import type { Link } from './types';
 
 	const name = 'Corey Psoinos';
-	const location = 'Brooklyn, NY';
+	const location = 'Brooklyn, New York';
 	const links: Link[] = [
 		{ href: 'https://linkedin.com/in/cpsoinos', text: 'linkedin.com/in/cpsoinos' },
 		{ href: 'https://github.com/cpsoinos', text: 'github.com/cpsoinos' }
@@ -17,7 +17,7 @@
 
 <div class="flex flex-col">
 	<h1 class="text-2xl">{name}</h1>
-	<div class="flex gap-2 divide-x text-sm print:text-xs">
+	<div class="flex gap-2 divide-x text-sm text-gray-700 print:text-xs">
 		<span>{location}</span>
 		{#each contact as { href, text }}
 			<a {href} class="ps-2 first:ps-0 md:hidden md:print:inline">{text}</a>

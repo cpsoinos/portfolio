@@ -15,13 +15,13 @@
 							>{item.website.text}</a
 						>{/if}
 				</div>
-				<div class="flex items-center gap-2 divide-x">
+				<div class="flex items-center justify-between">
 					<span class="text-sm text-gray-700 print:text-xs">{item.college}</span>
-					<span class="ps-2 text-sm text-gray-500 print:text-xs">
-						{item.startDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })} - {item.endDate ===
+					<span class="ps-2 text-xs text-gray-500 print:text-2xs">
+						{item.startDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} - {item.endDate ===
 						'current'
 							? 'current'
-							: item.endDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
+							: item.endDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
 					</span>
 				</div>
 				<p class="text-sm print:text-2xs">{item.degree}</p>
