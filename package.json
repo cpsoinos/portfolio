@@ -11,7 +11,8 @@
 		"deploy": "pnpm build && wrangler pages deploy",
 		"dev": "vite dev",
 		"format": "prettier --write .",
-		"lint": "prettier --check . && eslint .",
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix .",
 		"prepare": "husky",
 		"preview": "pnpm build && wrangler pages dev"
 	},
@@ -24,6 +25,7 @@
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20240620.0",
+		"@dword-design/eslint-plugin-import-alias": "^5.0.0",
 		"@iconify/svelte": "^4.0.2",
 		"@sveltejs/adapter-cloudflare": "^4.6.0",
 		"@sveltejs/kit": "^2.0.0",
