@@ -10,7 +10,7 @@
 
 <div class="flex flex-col gap-6">
 	<Header />
-	<Experience items={jobs} sectionTitle="Work experience" />
+	<Experience items={jobs} />
 	{#if projects.length > 0}
 		<Projects items={projects} />
 	{/if}

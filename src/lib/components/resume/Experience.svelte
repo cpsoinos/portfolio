@@ -3,12 +3,11 @@
 	import type { ExperienceItem } from './types';
 
 	export let items: ExperienceItem[];
-	export let sectionTitle: string;
 </script>
 
 <div class="flex flex-col gap-2">
 	<h2 class="border-t-2 border-indigo-600 bg-gray-50 p-1 uppercase text-gray-500 print:text-xs">
-		{sectionTitle}
+		Work experience
 	</h2>
 	<div class="flex flex-col gap-4">
 		{#each items as item (item.startDate.toISOString())}
