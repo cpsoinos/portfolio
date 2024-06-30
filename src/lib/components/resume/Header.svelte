@@ -17,7 +17,7 @@
 		{ href: 'tel:9788350558', text: '(978) 835-0558' }
 	];
 	const summary =
-		'Accomplished full-stack engineer with a passion for UX, design systems, and developer experience tooling. Expert in NextJS and React, Svelte and SvelteKit, Node, Vue, Ruby on Rails. Comfortable with Cloudflare, AWS, Firebase and GCP, and Heroku.';
+		'Accomplished full-stack engineer passionate about UX, design systems, accessibility, and developer experience tooling. Expertise in Next.js, React, Svelte, SvelteKit, Node, Vue, and Ruby on Rails. Proficient with Cloudflare, AWS, Firebase, GCP, and Heroku.';
 </script>
 
 <div class="flex justify-between border-t-8 border-indigo-600 bg-gray-100 p-4">

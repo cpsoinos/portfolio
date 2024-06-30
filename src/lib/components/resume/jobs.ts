@@ -21,8 +21,8 @@ export const jobs: ExperienceItem[] = [
 		startDate: new Date('2021-06-01'),
 		endDate: new Date('2022-09-23'),
 		bulletPoints: [
+			'Led team effort to achieve full site-wide accessibility compliance, adhering to WCAG 2.1 standards',
 			'Created internal monorepo for microservices on Cloudflare Workers',
-			'Engineering UX lead during migration from Spree to Shopify',
 			'Designed new front-end architecture using Typescript and React',
 			'Set and enforced code quality standards through ESLint, Prettier, and git hooks',
 			'Implemented CI/CD with Github Actions CI'
@@ -36,7 +36,8 @@ export const jobs: ExperienceItem[] = [
 		endDate: new Date('2021-06-01'),
 		bulletPoints: [
 			'Introduced exception and performance monitoring using Sentry',
-			'Collaborated closely with lead designer to define a new design system'
+			'Collaborated closely with lead designer to define a new design system',
+			'Engineering UX lead during migration from Spree to Shopify'
 		]
 	},
 	{
@@ -62,7 +63,7 @@ export const jobs: ExperienceItem[] = [
 			'Implemented direct native video sharing on Facebook by taking a hackathon project to production',
 			'Reduced microservice response time to < 100ms through optimizing database queries, caching, and moving tasks that were not critical to the request/response lifecycle to background processes',
 			'Led the transition from Resque to Sidekiq for background job processing',
-			"Tech lead for social advertising features: expanded ads with Facebook's marketing API to add audience network and Instagram placements, show real ad previews to clients prior to their purchase, and provide reporting"
+			"Expanded ad features with Facebook's marketing API to add audience network and Instagram placements, show real ad previews to clients prior to purchase, and provide reporting"
 		]
 	},
 	{
