@@ -14,6 +14,13 @@ export interface ExperienceItem {
 	bulletPoints?: string[];
 }
 
+export interface ProjectItem {
+	title: string;
+	links?: Link[];
+	description?: string;
+	bulletPoints?: string[];
+}
+
 export interface EducationItem {
 	university: string;
 	college: string;

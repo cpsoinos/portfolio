@@ -1,37 +1,55 @@
-import type { ExperienceItem } from './types';
+import type { ProjectItem } from './types';
 
-export const projects: ExperienceItem[] = [
+export const projects: ProjectItem[] = [
 	{
-		company: 'Sensory Interactive',
-		website: { href: 'https://vimeo.com/639565861', text: 'Video of in-lobby display' },
-		title: 'Contract Software Engineer',
-		startDate: new Date('2021-06-01'),
-		endDate: new Date('2021-06-01'),
-		bulletPoints: [
-			'Developed an app to serve as a menu page and a calibration page for a <a href="https://vimeo.com/639565861" target="_blank">lobby display<span class="material-symbols--open-in-new ml-1 print:hidden"></span></a> using NextJS',
-			'Heavily utilized SVGs and CSS animations to produce smooth transitions between angled displays'
-		]
+		title: 'vite-plugin-http2-proxy',
+		links: [
+			{
+				href: 'https://www.npmjs.com/package/@cpsoinos/vite-plugin-http2-proxy',
+				text: 'npmjs.com/package/@cpsoinos/vite-plugin-http2-proxy',
+				icon: 'logos:npm-icon'
+			},
+			{
+				href: 'https://github.com/cpsoinos/vite-plugin-http2-proxy',
+				text: 'cpsoinos/vite-plugin-http2-proxy',
+				icon: 'devicon:github'
+			}
+		],
+		description: 'A vite plugin to run an HTTP2 proxy in development mode.'
 	},
 	{
-		company: 'The Public Theater',
-		website: { href: 'https://hwap.anderapps.com', text: 'HWAP App' },
-		title: 'Contract Software Engineer',
-		startDate: new Date('2021-08-01'),
-		endDate: new Date('2022-06-01'),
-		bulletPoints: [
-			"Designed and built a custom notification system for the company's High-Wind Action Plan",
-			'Integrated with an on-site weather station through Ambient Weather for real-time wind speed readings',
-			'Developed customizable Slack and SMS alerts to employees subscribing to the list'
-		]
+		title: 'nuxt-svgo',
+		links: [
+			{
+				href: 'https://www.npmjs.com/package/nuxt-svgo',
+				text: 'npmjs.com/package/nuxt-svgo',
+				icon: 'logos:npm-icon'
+			},
+			{
+				href: 'https://github.com/cpsoinos/nuxt-svgo',
+				text: 'cpsoinos/nuxt-svgo',
+				icon: 'devicon:github'
+			}
+		],
+		description: 'A Nuxt module to load optimized SVG files as Vue components.',
+		bulletPoints: ['~25k weekly downloads', '~130 stars on GitHub']
 	},
 	{
-		company: 'Just the Right Piece, LLC',
-		title: 'Contract Software Engineer',
-		startDate: new Date('2016-03-01'),
-		endDate: new Date('2019-01-01'),
-		bulletPoints: [
-			'Developed a fully customized inventory management, CMS, and product gallery',
-			'Integrated inventory and order sync with Clover POS system'
-		]
+		title: 'Nuxtify',
+		description:
+			'A fun side project experimenting with Nuxt.js and TailwindCSS, with the goal of replicating the appearance of Spotify&#8217;s <span class="italic">Now Playing</span> mobile view.',
+		links: [
+			{
+				href: 'https://nuxtify.anderapps.com/now-playing',
+				text: 'nuxtify.anderapps.com',
+				icon: 'mdi:open-in-new'
+			},
+			{
+				href: 'https://github.com/cpsoinos/spotify-clone-vue',
+				text: 'cpsoinos/spotify-clone-vue',
+				icon: 'devicon:github'
+			}
+		],
+		bulletPoints: ['Built with Nuxt.js and TailwindCSS', 'Hosted on Cloudflare Workers']
 	}
 ];
