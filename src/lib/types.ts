@@ -1,3 +1,12 @@
+export interface User {
+	name: string;
+	email: string;
+	phone: string;
+	location: string;
+	summary: string;
+	links: Link[];
+}
+
 export interface Link {
 	href: string;
 	text: string;
