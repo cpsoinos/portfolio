@@ -22,9 +22,6 @@
 		],
 		"package.json": "sort-package-json"
 	},
-	"dependencies": {
-		"isomorphic-dompurify": "^2.12.0"
-	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20240620.0",
 		"@iconify/svelte": "^4.0.2",
