@@ -20,16 +20,16 @@
 	<div class="flex gap-2 divide-x text-sm print:text-xs">
 		<span>{location}</span>
 		{#each contact as { href, text }}
-			<a {href} class="first:ps-0 ps-2 md:hidden md:print:inline">{text}</a>
+			<a {href} class="ps-2 first:ps-0 md:hidden md:print:inline">{text}</a>
 		{/each}
 		{#each links as { href, text }}
 			<a {href} class="ps-2">{text}</a>
 		{/each}
 	</div>
-	<div class="gap-2 divide-x text-sm print:text-xs xs:hidden md:flex print:hidden">
+	<div class="xs:hidden gap-2 divide-x text-sm md:flex print:hidden print:text-xs">
 		{#each contact as { href, text }}
-			<a {href} class="first:ps-0 ps-2">{text}</a>
+			<a {href} class="ps-2 first:ps-0">{text}</a>
 		{/each}
 	</div>
-	<p class="text-sm print:text-2xs print:leading-normal text-gray-700">{summary}</p>
+	<p class="text-sm text-gray-700 print:text-2xs print:leading-normal">{summary}</p>
 </div>

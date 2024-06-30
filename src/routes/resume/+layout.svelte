@@ -1,4 +1,4 @@
-<div class="p-8 print:p-0 max-w-screen-md">
+<div class="max-w-screen-md p-8 print:p-0">
 	<slot />
 </div>
 
