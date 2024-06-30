@@ -1,4 +1,4 @@
-import type { EducationItem } from '$lib/types';
+import type { EducationItem } from './types';
 
 export const education: EducationItem[] = [
 	{

@@ -1,5 +1,8 @@
 import type { User } from '$lib/types';
 import type { PageLoad } from './$types';
+import { jobs } from '$lib/jobs';
+import { projects } from '$lib/projects';
+import { education } from '$lib/education';
 
 const user: User = {
 	name: 'Corey Psoinos',
@@ -20,6 +23,9 @@ const user: User = {
 
 export const load: PageLoad = () => {
 	return {
-		user
+		user,
+		jobs,
+		projects,
+		education
 	};
 };
