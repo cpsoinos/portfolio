@@ -83,6 +83,9 @@ importers:
       vite:
         specifier: ^5.0.3
         version: 5.3.2(@types/node@20.14.9)
+      vite-plugin-webfont-dl:
+        specifier: ^3.9.4
+        version: 3.9.4(vite@5.3.2(@types/node@20.14.9))
       wrangler:
         specifier: ^3.62.0
         version: 3.62.0(@cloudflare/workers-types@4.20240620.0)
@@ -761,12 +764,18 @@ packages:
   as-table@1.0.55:
     resolution: {integrity: sha512-xvsWESUJn0JN421Xb9MQw6AsMHRCUknCe0Wjlxvjud80mU4E6hQf1A6NzQKcYNmYw62MfzEtXc+badstZP3JpQ==}
 
+  asynckit@0.4.0:
+    resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
+
   autoprefixer@10.4.19:
     resolution: {integrity: sha512-BaENR2+zBZ8xXhM4pUaKUxlVdxZ0EZhjvbopwnXmxRUfqDmwSpC2lAi/QXvx7NRdPCo1WKEcEF6mV64si1z4Ew==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
       postcss: ^8.1.0
+
+  axios@1.7.2:
+    resolution: {integrity: sha512-2A8QhOMrbomlDuiLeK9XibIBzuHeRcqqNOHp0Cyp5EoJ1IFDh+XZH3A6BkXtv0K4gFGCI0Y4BM7B1wOEi0Rmgw==}
 
   axobject-query@4.0.0:
     resolution: {integrity: sha512-+60uv1hiVFhHZeO+Lz0RYzsVHy5Wr1ayX0mwda9KPDVLNJgZ1T9Ny7VmFbLDzxsH0D87I86vgj3gFrjTJUYznw==}
@@ -826,6 +835,10 @@ packages:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
 
+  clean-css@5.3.3:
+    resolution: {integrity: sha512-D5J+kHaVb/wKSFcyyV75uCn8fiY4sV38XJoe4CUyGQ+mOU/fMVYUdH1hJC+CJQ5uY3EnW27SbJYS4X8BiLrAFg==}
+    engines: {node: '>= 10.0'}
+
   cli-cursor@4.0.0:
     resolution: {integrity: sha512-VGtlMu3x/4DOtIUwEkRezxUZ2lBacNJCHash0N0WeZDBS+7Ux1dm3XWAgWYxLJFMMdOeXMHXorshEFhbMSGelg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
@@ -843,6 +856,10 @@ packages:
 
   colorette@2.0.20:
     resolution: {integrity: sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==}
+
+  combined-stream@1.0.8:
+    resolution: {integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==}
+    engines: {node: '>= 0.8'}
 
   commander@12.1.0:
     resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
@@ -900,6 +917,10 @@ packages:
 
   defu@6.1.4:
     resolution: {integrity: sha512-mEQCMmwJu317oSz8CwdIOdwf3xMif1ttiM8LTufzc3g6kR+9Pe236twL8j3IYT1F7GfRgGcW6MWxzZjLIkuHIg==}
+
+  delayed-stream@1.0.0:
+    resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
+    engines: {node: '>=0.4.0'}
 
   dequal@2.0.3:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
@@ -1081,6 +1102,10 @@ packages:
     resolution: {integrity: sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==}
     engines: {node: '>=10'}
 
+  flat-cache@3.2.0:
+    resolution: {integrity: sha512-CYcENa+FtcUKLmhhqyctpclsq7QF38pKjZHsGNiSQF5r4FtoKDWabFDl3hzaEQMvT1LHEysw5twgLvpYYb4vbw==}
+    engines: {node: ^10.12.0 || >=12.0.0}
+
   flat-cache@4.0.1:
     resolution: {integrity: sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==}
     engines: {node: '>=16'}
@@ -1088,9 +1113,22 @@ packages:
   flatted@3.3.1:
     resolution: {integrity: sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==}
 
+  follow-redirects@1.15.6:
+    resolution: {integrity: sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+
   foreground-child@3.2.1:
     resolution: {integrity: sha512-PXUUyLqrR2XCWICfv6ukppP96sdFwWbNEnfEMt7jNsISjMsvaLNinAHNDYyvkyU+SZG2BTSbT5NjG+vZslfGTA==}
     engines: {node: '>=14'}
+
+  form-data@4.0.0:
+    resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
+    engines: {node: '>= 6'}
 
   fraction.js@4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
@@ -1350,6 +1388,14 @@ packages:
   micromatch@4.0.7:
     resolution: {integrity: sha512-LPP/3KorzCwBxfeUuZmaR6bG2kdeHSbe0P2tY3FLRU4vYrjYz5hI4QZwV0njUx3jeuKe67YukQ1LSPZBKDqO/Q==}
     engines: {node: '>=8.6'}
+
+  mime-db@1.52.0:
+    resolution: {integrity: sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==}
+    engines: {node: '>= 0.6'}
+
+  mime-types@2.1.35:
+    resolution: {integrity: sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==}
+    engines: {node: '>= 0.6'}
 
   mime@3.0.0:
     resolution: {integrity: sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A==}
@@ -1665,6 +1711,9 @@ packages:
   printable-characters@1.0.42:
     resolution: {integrity: sha512-dKp+C4iXWK4vVYZmYSd0KBH5F/h1HoZRsbJ82AVKRO3PEo8L4lBS/vLwhVtpwwuYcoIsVY+1JYKR268yn480uQ==}
 
+  proxy-from-env@1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
+
   punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
@@ -1708,6 +1757,11 @@ packages:
 
   rimraf@2.7.1:
     resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
+    hasBin: true
+
+  rimraf@3.0.2:
+    resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
     deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
@@ -2004,6 +2058,11 @@ packages:
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+
+  vite-plugin-webfont-dl@3.9.4:
+    resolution: {integrity: sha512-QaGElPV9EhwQHukQu2jjhWVMTi0Y5xK2hLswdCgzIl//Abv0qqsX2yCnUjFE5YPIepuWD3aCoFR2Fx+ywYQYmQ==}
+    peerDependencies:
+      vite: ^2 || ^3 || ^4 || ^5
 
   vite@5.3.2:
     resolution: {integrity: sha512-6lA7OBHBlXUxiJxbO5aAY2fsHHzDr1q7DvXYnyZycRs2Dz+dXBWuhpWHvmljTRTpQC2uvGmUFFkSHF2vGo90MA==}
@@ -2647,6 +2706,8 @@ snapshots:
     dependencies:
       printable-characters: 1.0.42
 
+  asynckit@0.4.0: {}
+
   autoprefixer@10.4.19(postcss@8.4.39):
     dependencies:
       browserslist: 4.23.1
@@ -2656,6 +2717,14 @@ snapshots:
       picocolors: 1.0.1
       postcss: 8.4.39
       postcss-value-parser: 4.2.0
+
+  axios@1.7.2:
+    dependencies:
+      follow-redirects: 1.15.6
+      form-data: 4.0.0
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
 
   axobject-query@4.0.0:
     dependencies:
@@ -2721,6 +2790,10 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
+  clean-css@5.3.3:
+    dependencies:
+      source-map: 0.6.1
+
   cli-cursor@4.0.0:
     dependencies:
       restore-cursor: 4.0.0
@@ -2737,6 +2810,10 @@ snapshots:
   color-name@1.1.4: {}
 
   colorette@2.0.20: {}
+
+  combined-stream@1.0.8:
+    dependencies:
+      delayed-stream: 1.0.0
 
   commander@12.1.0: {}
 
@@ -2771,6 +2848,8 @@ snapshots:
   deepmerge@4.3.1: {}
 
   defu@6.1.4: {}
+
+  delayed-stream@1.0.0: {}
 
   dequal@2.0.3: {}
 
@@ -3018,6 +3097,12 @@ snapshots:
       locate-path: 6.0.0
       path-exists: 4.0.0
 
+  flat-cache@3.2.0:
+    dependencies:
+      flatted: 3.3.1
+      keyv: 4.5.4
+      rimraf: 3.0.2
+
   flat-cache@4.0.1:
     dependencies:
       flatted: 3.3.1
@@ -3025,10 +3110,18 @@ snapshots:
 
   flatted@3.3.1: {}
 
+  follow-redirects@1.15.6: {}
+
   foreground-child@3.2.1:
     dependencies:
       cross-spawn: 7.0.3
       signal-exit: 4.1.0
+
+  form-data@4.0.0:
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      mime-types: 2.1.35
 
   fraction.js@4.3.7: {}
 
@@ -3269,6 +3362,12 @@ snapshots:
       braces: 3.0.3
       picomatch: 2.3.1
 
+  mime-db@1.52.0: {}
+
+  mime-types@2.1.35:
+    dependencies:
+      mime-db: 1.52.0
+
   mime@3.0.0: {}
 
   mimic-fn@2.1.0: {}
@@ -3483,6 +3582,8 @@ snapshots:
 
   printable-characters@1.0.42: {}
 
+  proxy-from-env@1.1.0: {}
+
   punycode@2.3.1: {}
 
   queue-microtask@1.2.3: {}
@@ -3517,6 +3618,10 @@ snapshots:
   rfdc@1.4.1: {}
 
   rimraf@2.7.1:
+    dependencies:
+      glob: 7.2.3
+
+  rimraf@3.0.2:
     dependencies:
       glob: 7.2.3
 
@@ -3859,6 +3964,16 @@ snapshots:
       punycode: 2.3.1
 
   util-deprecate@1.0.2: {}
+
+  vite-plugin-webfont-dl@3.9.4(vite@5.3.2(@types/node@20.14.9)):
+    dependencies:
+      axios: 1.7.2
+      clean-css: 5.3.3
+      flat-cache: 3.2.0
+      picocolors: 1.0.1
+      vite: 5.3.2(@types/node@20.14.9)
+    transitivePeerDependencies:
+      - debug
 
   vite@5.3.2(@types/node@20.14.9):
     dependencies:
