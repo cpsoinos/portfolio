@@ -1,9 +1,6 @@
 <script lang="ts">
 	import Header from '$lib/components/resume/Header.svelte';
 	import Experience from '$lib/components/resume/Experience.svelte';
-	import { jobs } from '$lib/components/resume/jobs';
-	import { projects } from '$lib/components/resume/projects';
-	import { education } from '$lib/components/resume/education';
 	import Education from '$lib/components/resume/Education.svelte';
 	import Projects from '$lib/components/resume/Projects.svelte';
 	import type { PageData } from './$types';
@@ -18,9 +15,9 @@
 
 <div class="flex flex-col gap-6">
 	<Header user={data.user} />
-	<Experience items={jobs} />
-	{#if projects.length > 0}
-		<Projects items={projects} />
+	<Experience items={data.jobs} />
+	{#if data.projects.length > 0}
+		<Projects items={data.projects} />
 	{/if}
-	<Education items={education} />
+	<Education items={data.education} />
 </div>

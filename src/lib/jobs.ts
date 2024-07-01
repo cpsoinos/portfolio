@@ -1,4 +1,4 @@
-import type { ExperienceItem } from '$lib/types';
+import type { ExperienceItem } from './types';
 
 export const jobs: ExperienceItem[] = [
 	{
