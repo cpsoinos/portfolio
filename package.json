@@ -21,7 +21,7 @@
 			"prettier --write",
 			"eslint --cache --fix"
 		],
-		"**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,astro,svelte}": "oxlint",
+		"**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,astro,svelte}": "oxlint --fix",
 		"package.json": "sort-package-json"
 	},
 	"devDependencies": {
