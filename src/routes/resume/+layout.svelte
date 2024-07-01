@@ -7,7 +7,7 @@
 	/>
 </svelte:head>
 
-<div class="max-w-screen-md p-8 print:p-0">
+<div class="mx-auto max-w-screen-md p-8 print:p-0">
 	<slot />
 </div>
 
