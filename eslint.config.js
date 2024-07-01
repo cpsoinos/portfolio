@@ -18,6 +18,7 @@ export default [
 				'error',
 				{
 					alias: {
+						$db: './src/db',
 						$lib: './src/lib'
 					}
 				}

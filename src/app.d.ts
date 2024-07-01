@@ -12,6 +12,7 @@ declare global {
 				waitUntil(promise: Promise<any>): void;
 			};
 			caches: CacheStorage & { default: Cache };
+			env: Env;
 		}
 	}
 }

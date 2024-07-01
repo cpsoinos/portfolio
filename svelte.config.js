@@ -8,17 +8,20 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
+		alias: {
+			'$db/*': './src/db/*'
+		},
 		adapter: adapter({
 			routes: {
 				include: ['/*'],
 				exclude: ['<all>']
-			},
-			platformProxy: {
-				configPath: 'wrangler.toml',
-				environment: undefined,
-				experimentalJsonConfig: false,
-				persist: false
 			}
+			// platformProxy: {
+			// 	configPath: 'wrangler.toml',
+			// 	environment: undefined,
+			// 	experimentalJsonConfig: false,
+			// 	persist: false
+			// }
 		})
 	}
 };

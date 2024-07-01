@@ -1,10 +1,13 @@
-import type { User } from '$lib/types';
 import type { PageLoad } from './$types';
 import { jobs } from '$lib/jobs';
 import { projects } from '$lib/projects';
 import { education } from '$lib/education';
+import type { User } from '$db/users';
 
 const user: User = {
+	id: 'abc1234',
+	createdAt: new Date(),
+	updatedAt: new Date(),
 	name: 'Corey Psoinos',
 	email: 'coreypsoinos@gmail.com',
 	phone: '(978) 835-0558',
