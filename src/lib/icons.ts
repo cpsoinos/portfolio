@@ -1,6 +1,12 @@
 import { loadIcons } from '@iconify/svelte';
 
-const ICONS = ['devicon:github', 'devicon:linkedin', 'logos:npm-icon', 'mdi:open-in-new'];
+const ICONS = [
+	'devicon:github',
+	'devicon:linkedin',
+	'logos:npm-icon',
+	'mdi:open-in-new',
+	'mdi:location'
+];
 
 export async function preloadIcons() {
 	try {
@@ -19,7 +25,6 @@ export async function preloadIcons() {
 						missing
 					});
 				} else {
-					console.log('Icons loaded:', loaded);
 					resolve({
 						loaded
 					});

@@ -7,7 +7,6 @@
 	let icon: string;
 
 	$: preloadedIcon = getIcon(icon);
-	$: console.log({ preloadedIcon });
 </script>
 
 {#if preloadedIcon}
