@@ -23,7 +23,11 @@
 <div class="grid-cols-3 gap-4 sm:grid">
 	<div class="col-span-2 flex flex-col gap-6 pt-6">
 		<Experience items={data.jobs} />
-		<Skills class="sm:hidden" items={data.skills} />
+		{#if data.projects.length > 0}
+			<Projects items={data.projects} class="sm:hidden" />
+		{/if}
+		<Skills items={data.skills} class="sm:hidden" />
+		<Education items={data.education} class="sm:hidden" />
 	</div>
 
 	<div
