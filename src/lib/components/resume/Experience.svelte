@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Icon from '@iconify/svelte';
+	import Icon from '$lib/components/Icon.svelte';
 	import type { ExperienceItem } from '$lib/types';
 
 	export let items: ExperienceItem[];

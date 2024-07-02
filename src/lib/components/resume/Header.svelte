@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { User } from '$lib/types';
-	import Icon from '@iconify/svelte';
+	import Icon from '$lib/components/Icon.svelte';
 
 	export let user: User;
 </script>
