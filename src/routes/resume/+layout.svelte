@@ -18,7 +18,7 @@
 		}
 	}
 
-	:global(html) {
+	:global(body) {
 		@apply font-body;
 	}
 </style>
