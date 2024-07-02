@@ -2,4 +2,4 @@
 	import ResumeSection from './ResumeSection.svelte';
 </script>
 
-<ResumeSection sectionTitle="Skills"></ResumeSection>
+<ResumeSection sectionTitle="Skills" class={$$props.class}></ResumeSection>

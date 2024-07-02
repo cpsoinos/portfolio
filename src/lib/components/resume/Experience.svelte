@@ -7,7 +7,7 @@
 	export let items: ExperienceItem[];
 </script>
 
-<ResumeSection sectionTitle="Work experience">
+<ResumeSection sectionTitle="Work experience" class={$$props.class}>
 	{#each items as item (item.startDate.toISOString())}
 		<div>
 			<div class="flex items-center justify-between gap-4">

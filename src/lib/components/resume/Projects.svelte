@@ -6,7 +6,7 @@
 	export let items: ProjectItem[];
 </script>
 
-<ResumeSection sectionTitle="Projects">
+<ResumeSection sectionTitle="Projects" class={$$props.class}>
 	{#each items as item (item.title)}
 		<div>
 			<h3 class="text-lg uppercase text-gray-700 print:text-sm">

@@ -6,7 +6,7 @@
 	export let items: EducationItem[];
 </script>
 
-<ResumeSection sectionTitle="Education">
+<ResumeSection sectionTitle="Education" class={$$props.class}>
 	{#each items as item (item.college)}
 		<div>
 			<div>
