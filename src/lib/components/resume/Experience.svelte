@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Icon from '@iconify/svelte';
+	import Icon from '$lib/components/Icon.svelte';
 	import type { ExperienceItem } from '$lib/types';
 	import ResumeSection from './ResumeSection.svelte';
 	import Timespan from './Timespan.svelte';
