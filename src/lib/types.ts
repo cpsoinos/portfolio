@@ -39,3 +39,8 @@ export interface EducationItem {
 	startDate: Date;
 	endDate?: Date;
 }
+
+export interface SkillItem {
+	title: string;
+	items: string[];
+}

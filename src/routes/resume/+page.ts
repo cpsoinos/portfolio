@@ -3,6 +3,7 @@ import type { PageLoad } from './$types';
 import { jobs } from '$lib/jobs';
 import { projects } from '$lib/projects';
 import { education } from '$lib/education';
+import { skills } from '$lib/skills';
 
 const user: User = {
 	name: 'Corey Psoinos',
@@ -26,6 +27,7 @@ export const load: PageLoad = () => {
 		user,
 		jobs,
 		projects,
-		education
+		education,
+		skills
 	};
 };

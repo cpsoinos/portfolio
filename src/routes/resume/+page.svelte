@@ -21,14 +21,16 @@
 </div>
 
 <div class="grid-cols-3 gap-4 md:grid">
-	<div class="col-span-2 flex flex-col gap-4 pt-6">
+	<div class="col-span-2 flex flex-col gap-6 pt-6">
 		<Experience items={data.jobs} />
 		{#if data.projects.length > 0}
 			<Projects items={data.projects} />
 		{/if}
-		<Skills class="md:hidden" />
+		<Skills class="md:hidden" items={data.skills} />
 		<Education items={data.education} />
 	</div>
 
-	<Skills class="col-span-1 hidden bg-gray-100 md:flex md:p-4 md:pt-6" />
+	<div class="col-span-1 hidden bg-gray-100 md:flex md:flex-col md:gap-6 md:p-4 md:pt-6">
+		<Skills items={data.skills} />
+	</div>
 </div>
