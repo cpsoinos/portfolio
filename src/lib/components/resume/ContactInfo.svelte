@@ -6,7 +6,7 @@
 </script>
 
 <div
-	class="flex flex-wrap items-end gap-x-2 text-sm text-gray-700 md:flex-col print:text-xs {$$props.class}"
+	class="flex flex-wrap items-end gap-x-2 text-sm text-gray-700 sm:flex-col print:text-xs {$$props.class}"
 >
 	<p class="text-sm text-gray-700 print:text-xs">
 		<Icon icon="mdi:location" inline class="inline" />

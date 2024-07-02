@@ -6,7 +6,7 @@
 </script>
 
 <ResumeSection sectionTitle="Skills" class={$$props.class}>
-	<div class="flex flex-col gap-4">
+	<div class="flex flex-col gap-4 print:gap-2">
 		{#each items as skill (skill.title)}
 			<div>
 				<h3 class="text-sm uppercase print:text-xs">{skill.title}</h3>
