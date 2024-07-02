@@ -5,7 +5,9 @@
 	export let user: User;
 </script>
 
-<div class="flex flex-col items-end text-sm text-gray-700 print:text-xs {$$props.class}">
+<div
+	class="flex flex-wrap items-end gap-x-2 text-sm text-gray-700 md:flex-col print:text-xs {$$props.class}"
+>
 	<p class="text-sm text-gray-700 print:text-xs">
 		<Icon icon="mdi:location" inline class="inline" />
 		{user.location}
@@ -14,7 +16,7 @@
 	<a href="tel:{user.phone}" target="_blank">{user.phone}</a>
 	{#each user.links as { href, text, icon }}
 		<div class="flex items-center gap-1">
-			{#if icon}<Icon {icon} class="inline" inline />{/if}<a {href} class="">{text}</a>
+			{#if icon}<Icon {icon} class="inline" inline />{/if}<a {href} target="_blank">{text}</a>
 		</div>
 	{/each}
 </div>

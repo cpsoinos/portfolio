@@ -15,18 +15,20 @@
 	<meta name="description" content={data.user.summary} />
 </svelte:head>
 
-<div class="grid grid-cols-3 gap-4 border-t-8 border-indigo-600">
+<div class="flex flex-col gap-4 border-t-8 border-indigo-600 md:grid md:grid-cols-3">
 	<Header user={data.user} class="col-span-2 pt-2" />
-	<ContactInfo user={data.user} class="col-span-1 bg-gray-100 px-4 pt-2" />
+	<ContactInfo user={data.user} class="col-span-1 md:bg-gray-100 md:px-4 md:pt-2" />
 </div>
 
-<div class="grid grid-cols-3 gap-4">
+<div class="grid-cols-3 gap-4 md:grid">
 	<div class="col-span-2 flex flex-col gap-4 pt-6">
 		<Experience items={data.jobs} />
 		{#if data.projects.length > 0}
 			<Projects items={data.projects} />
 		{/if}
+		<Skills class="md:hidden" />
 		<Education items={data.education} />
 	</div>
-	<Skills class="col-span-1 bg-gray-100 p-4 pt-6" />
+
+	<Skills class="col-span-1 hidden bg-gray-100 md:flex md:p-4 md:pt-6" />
 </div>
