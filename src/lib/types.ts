@@ -19,7 +19,7 @@ export interface ExperienceItem {
 	location: string;
 	title: string;
 	startDate: Date;
-	endDate: Date | 'current';
+	endDate?: Date;
 	description?: string;
 	bulletPoints?: string[];
 }
@@ -37,5 +37,10 @@ export interface EducationItem {
 	website?: Link;
 	degree: string;
 	startDate: Date;
-	endDate: Date | 'current';
+	endDate?: Date;
+}
+
+export interface SkillItem {
+	title: string;
+	items: string[];
 }

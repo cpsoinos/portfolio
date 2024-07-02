@@ -6,7 +6,7 @@ export const projects: ProjectItem[] = [
 		links: [
 			{
 				href: 'https://www.npmjs.com/package/@cpsoinos/vite-plugin-http2-proxy',
-				text: 'npmjs.com/package/@cpsoinos/vite-plugin-http2-proxy',
+				text: '@cpsoinos/vite-plugin-http2-proxy',
 				icon: 'logos:npm-icon'
 			},
 			{
@@ -22,7 +22,7 @@ export const projects: ProjectItem[] = [
 		links: [
 			{
 				href: 'https://www.npmjs.com/package/nuxt-svgo',
-				text: 'npmjs.com/package/nuxt-svgo',
+				text: 'nuxt-svgo',
 				icon: 'logos:npm-icon'
 			},
 			{
@@ -37,7 +37,7 @@ export const projects: ProjectItem[] = [
 	{
 		title: 'Nuxtify',
 		description:
-			'A fun side project experimenting with Nuxt.js and TailwindCSS, with the goal of replicating the appearance of Spotify&#8217;s <span class="italic">Now Playing</span> mobile view.',
+			'A fun side project experimenting with Nuxt and TailwindCSS, with the goal of replicating the appearance of Spotify&#8217;s <span class="italic">Now Playing</span> mobile view.',
 		links: [
 			{
 				href: 'https://nuxtify.anderapps.com/now-playing',
@@ -50,6 +50,6 @@ export const projects: ProjectItem[] = [
 				icon: 'devicon:github'
 			}
 		],
-		bulletPoints: ['Built with Nuxt.js and TailwindCSS', 'Hosted on Cloudflare Workers']
+		bulletPoints: ['Built with Nuxt and TailwindCSS', 'Hosted on Cloudflare Workers']
 	}
 ];
