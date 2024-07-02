@@ -13,7 +13,7 @@
 				{item.title}
 			</h3>
 			{#if item.links?.length}
-				<div class="flex items-center gap-4 text-sm text-indigo-600 print:text-xs">
+				<div class="flex flex-wrap items-center gap-x-4 text-sm text-indigo-600 print:text-xs">
 					{#each item.links as link}
 						<a href={link.href} target="_blank" class="flex gap-1">
 							{#if link.icon}
