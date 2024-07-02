@@ -11,7 +11,7 @@ const user: User = {
 	phone: '(978) 835-0558',
 	location: 'Brooklyn, NY',
 	summary:
-		'Accomplished frontend-focused full-stack engineer passionate about UX, design systems, accessibility, and developer experience tooling. Expertise in Next.js, React, Svelte, SvelteKit, Node, Vue, and Ruby on Rails. Proficient with Cloudflare, AWS, Firebase, GCP, and Heroku.',
+		'Accomplished frontend-focused full-stack engineer with 9 years of experience. Passionate about UX, design systems, accessibility, and developer experience tooling. Expertise in NextJS, React, Svelte, SvelteKit, Vue, Node, V8, and Ruby on Rails. Proficient in setting up CI/CD pipelines to ensure quality, consistency, and velocity. Experienced with Cloudflare, AWS, Firebase, GCP, and Heroku.',
 	links: [
 		{
 			href: 'https://linkedin.com/in/cpsoinos',

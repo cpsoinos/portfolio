@@ -23,7 +23,7 @@ export const skills: SkillItem[] = [
 	},
 	{
 		title: 'Databases',
-		items: ['PostgreSQL', 'MySQL', 'SQLite', 'MongoDB', 'Firestore', 'Redis']
+		items: ['PostgreSQL', 'MySQL', 'SQLite', 'Redis', 'MongoDB', 'Firestore']
 	},
 	{
 		title: 'Cloud & DevOps',
@@ -31,16 +31,6 @@ export const skills: SkillItem[] = [
 	},
 	{
 		title: 'Other',
-		items: [
-			'Storybook',
-			'Shopify',
-			'Vite',
-			'Webpack',
-			'GitHub Actions',
-			'Figma',
-			'Jest',
-			'Vitest',
-			'RSpec'
-		]
+		items: ['Vite', 'Webpack', 'Storybook', 'GitHub Actions', 'Figma', 'Shopify']
 	}
 ];

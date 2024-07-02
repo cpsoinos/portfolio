@@ -63,7 +63,7 @@ export const jobs: ExperienceItem[] = [
 		startDate: new Date('2021-06-07'),
 		endDate: new Date('2021-07-30'),
 		bulletPoints: [
-			'Developed an app to serve as a menu page and a calibration page for a <a href="https://vimeo.com/639565861" target="_blank">lobby display<span class="material-symbols--open-in-new ml-1 print:hidden"></span></a> using NextJS',
+			'Developed an app to serve as a menu page and a calibration page for an angled, multi-screen <a href="https://vimeo.com/639565861" target="_blank">lobby display<span class="material-symbols--open-in-new ml-1 print:hidden"></span></a> using NextJS',
 			'Heavily utilized SVGs and CSS animations to produce smooth transitions between angled displays'
 		]
 	},
