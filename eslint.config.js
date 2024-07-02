@@ -12,6 +12,17 @@ export default [
 	...ts.configs.recommended,
 	...svelte.configs['flat/recommended'],
 	{
+		rules: {
+			'@typescript-eslint/no-unused-vars': [
+				'warn',
+				{
+					argsIgnorePattern: '^_',
+					varsIgnorePattern: '^_|^\\$\\$(Props|Events|Slots)$'
+				}
+			]
+		}
+	},
+	{
 		plugins: { '@dword-design/import-alias': importAlias },
 		rules: {
 			'@dword-design/import-alias/prefer-alias': [
