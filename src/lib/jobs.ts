@@ -7,6 +7,7 @@ export const jobs: ExperienceItem[] = [
 		location: 'New York, NY',
 		title: 'Senior Software Engineer II',
 		startDate: new Date('2022-09-26'),
+		endDate: new Date('2024-07-03'),
 		bulletPoints: [
 			'Mentored junior engineers in React and agile processes',
 			'Led engineering initiative and collaborated closely with designers to create a new internal design system',
