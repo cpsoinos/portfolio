@@ -1,28 +1,12 @@
-import { sql } from 'drizzle-orm';
 import { text, uniqueIndex, blob, sqliteTable } from 'drizzle-orm/sqlite-core';
-import { createId } from '@paralleldrive/cuid2';
-
-type Link = {
-	href: string;
-	text: string;
-	icon?: string;
-};
+import type { Link } from '$lib/types';
+import { id, timestamps } from './utils/common';
 
 export const users = sqliteTable(
 	'users',
 	{
-		id: text('id')
-			.primaryKey()
-			.$defaultFn(() => createId()),
-		createdAt: text('created_at')
-			.notNull()
-			.default(sql`(CURRENT_TIMESTAMP)`)
-			.$type<Date>(),
-		updatedAt: text('updated_at')
-			.notNull()
-			.default(sql`(CURRENT_TIMESTAMP)`)
-			.$onUpdate(() => sql`(CURRENT_TIMESTAMP)`)
-			.$type<Date>(),
+		id,
+		...timestamps,
 		name: text('name').notNull(),
 		email: text('email').notNull(),
 		phone: text('phone'),
