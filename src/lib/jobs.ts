@@ -7,7 +7,7 @@ export const jobs: ExperienceItem[] = [
 		location: 'New York, NY',
 		title: 'Senior Software Engineer II',
 		startDate: new Date('2022-09-26'),
-		endDate: 'current',
+		endDate: new Date('2024-07-03'),
 		bulletPoints: [
 			'Mentored junior engineers in React and agile processes',
 			'Led engineering initiative and collaborated closely with designers to create a new internal design system',
@@ -64,7 +64,7 @@ export const jobs: ExperienceItem[] = [
 		startDate: new Date('2021-06-07'),
 		endDate: new Date('2021-07-30'),
 		bulletPoints: [
-			'Developed an app to serve as a menu page and a calibration page for a <a href="https://vimeo.com/639565861" target="_blank">lobby display<span class="material-symbols--open-in-new ml-1 print:hidden"></span></a> using NextJS',
+			'Developed an app to serve as a menu page and a calibration page for an angled, multi-screen <a href="https://vimeo.com/639565861" target="_blank">lobby display<span class="material-symbols--open-in-new ml-1 print:hidden"></span></a> using NextJS',
 			'Heavily utilized SVGs and CSS animations to produce smooth transitions between angled displays'
 		]
 	},
@@ -85,8 +85,8 @@ export const jobs: ExperienceItem[] = [
 		company: 'Just the Right Piece, LLC',
 		title: 'Contract Software Engineer',
 		location: 'Salem, NH',
-		startDate: new Date('2016-03-01'),
-		endDate: new Date('2019-01-01'),
+		startDate: new Date('2016-03-02'),
+		endDate: new Date('2019-01-12'),
 		bulletPoints: [
 			'Developed a fully customized inventory management, CMS, and product gallery',
 			'Integrated inventory and order sync with Clover POS system'
@@ -112,8 +112,8 @@ export const jobs: ExperienceItem[] = [
 		website: { href: 'https://www.launchacademy.com/', text: 'launchacademy.com' },
 		location: 'Boston, MA',
 		title: 'Ruby on Rails Apprentice',
-		startDate: new Date('2015-02-01'),
-		endDate: new Date('2015-04-01'),
+		startDate: new Date('2015-02-16'),
+		endDate: new Date('2015-04-29'),
 		description:
 			'Launch Academy is a 10-week, immersive bootcamp taking eager learners with little to no experience and teaching them what it takes to add value as a junior contributor to a software engineering team.'
 	}

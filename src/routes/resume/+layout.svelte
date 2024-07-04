@@ -7,7 +7,7 @@
 	/>
 </svelte:head>
 
-<div class="max-w-screen-md p-8 print:p-0">
+<div class="mx-auto max-w-screen-md p-4 sm:p-8 print:p-0">
 	<slot />
 </div>
 
@@ -18,7 +18,7 @@
 		}
 	}
 
-	:global(html) {
+	:global(body) {
 		@apply font-body;
 	}
 </style>
