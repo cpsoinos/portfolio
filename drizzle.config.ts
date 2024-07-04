@@ -1,13 +1,25 @@
-import { defineConfig } from 'drizzle-kit';
+import type { Config } from 'drizzle-kit';
 
-export default defineConfig({
-	schema: './src/db/*.ts',
-	out: './drizzle',
-	dialect: 'sqlite', // 'postgresql' | 'mysql' | 'sqlite'
-	driver: 'd1-http',
-	dbCredentials: {
-		accountId: '62dd6e6f44a50c62d4ad76a0122f5a3c',
-		databaseId: '41738044-91b9-4eb8-871a-10ee345e9108',
-		token: 'op://Private/Cloudflare D1 Edit Token/credential'
-	}
-});
+const { LOCAL_DB_PATH, CF_DB_ID, CF_D1_TOKEN, CF_ACCOUNT_ID } = process.env;
+
+// Use better-sqlite driver for local development
+export default LOCAL_DB_PATH
+	? ({
+			schema: './src/db/*.ts',
+			dialect: 'sqlite',
+			out: './drizzle',
+			dbCredentials: {
+				url: LOCAL_DB_PATH
+			}
+		} satisfies Config)
+	: ({
+			schema: './src/db/*.ts',
+			out: './drizzle',
+			dialect: 'sqlite',
+			driver: 'd1-http',
+			dbCredentials: {
+				databaseId: CF_DB_ID!,
+				token: CF_D1_TOKEN!,
+				accountId: CF_ACCOUNT_ID!
+			}
+		} satisfies Config);

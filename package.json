@@ -9,15 +9,18 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"db:generate": "drizzle-kit generate",
-		"db:migrate": "drizzle-kit migrate",
-		"db:migrate:dev": "wrangler d1 migrations apply portfolio --local",
-		"deploy": "pnpm build && wrangler pages deploy",
+		"db:migrate:local": "wrangler d1 migrations apply portfolio --local",
+		"db:migrate:prod": "drizzle-kit migrate",
+		"db:studio:local": "LOCAL_DB_PATH=$(find .wrangler/state/v3/d1/miniflare-D1DatabaseObject -type f -name '*.sqlite' -print -quit) drizzle-kit studio",
+		"db:studio:prod": "op run --env-file=\"./.env.production\" -- drizzle-kit studio",
+		"deploy": "pnpm build && pnpm wrangler pages deploy",
 		"dev": "vite dev",
 		"format": "prettier --write .",
 		"lint": "oxlint && eslint .",
 		"lint:fix": "oxlint --fix && eslint --fix .",
 		"prepare": "husky",
-		"preview": "pnpm build && wrangler pages dev"
+		"preview": "pnpm build && pnpm wrangler pages dev",
+		"wrangler": "op plugin run -- wrangler"
 	},
 	"lint-staged": {
 		"*.{js,ts,svelte}": [
@@ -40,6 +43,7 @@
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/eslint": "^8.56.7",
 		"autoprefixer": "^10.4.19",
+		"better-sqlite3": "^11.1.2",
 		"drizzle-kit": "^0.22.8",
 		"eslint": "^9.0.0",
 		"eslint-config-prettier": "^9.1.0",
