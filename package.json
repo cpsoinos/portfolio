@@ -24,6 +24,9 @@
 		"**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,astro,svelte}": "oxlint --fix",
 		"package.json": "sort-package-json"
 	},
+	"dependencies": {
+		"posthog-js": "^1.144.2"
+	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20240620.0",
 		"@dword-design/eslint-plugin-import-alias": "^5.0.0",
