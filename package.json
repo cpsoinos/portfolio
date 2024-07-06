@@ -8,13 +8,14 @@
 		"cf-typegen": "wrangler types && mv worker-configuration.d.ts src/",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"deploy": "pnpm build && wrangler pages deploy",
+		"deploy": "pnpm build && pnpm wrangler pages deploy",
 		"dev": "vite dev",
 		"format": "prettier --write .",
 		"lint": "oxlint && eslint .",
 		"lint:fix": "oxlint --fix && eslint --fix .",
 		"prepare": "husky",
-		"preview": "pnpm build && wrangler pages dev"
+		"preview": "pnpm build && pnpm wrangler pages dev",
+		"wrangler": "op plugin run -- wrangler"
 	},
 	"lint-staged": {
 		"*.{js,ts,svelte}": [
