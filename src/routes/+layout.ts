@@ -10,7 +10,7 @@ export const load: LayoutLoad = async () => {
 	if (browser) {
 		posthog.init(env.PUBLIC_POSTHOG_API_KEY, {
 			api_host: 'https://ph.anderapps.com',
-			person_profiles: 'always' // or 'always' to create profiles for anonymous users as well
+			person_profiles: 'always'
 		});
 	}
 
