@@ -32,7 +32,7 @@
 			<Experience items={data.jobs} />
 		</div>
 
-		<div class="col-span-1 flex flex-col gap-6 pt-6 sm:bg-gray-100 sm:p-4 print:gap-4">
+		<div class="col-span-1 flex flex-col gap-6 pt-6 sm:bg-gray-100 sm:p-4 sm:pt-6 print:gap-4">
 			{#if data.projects.length > 0}
 				<Projects items={data.projects} />
 			{/if}
