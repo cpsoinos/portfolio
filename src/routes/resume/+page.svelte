@@ -30,6 +30,7 @@
 	<div class="grid-cols-3 gap-4 sm:grid">
 		<div class="col-span-2 flex flex-col gap-6 pt-6">
 			<Experience items={data.jobs} />
+			<Education items={data.education} />
 		</div>
 
 		<div class="col-span-1 flex flex-col gap-6 pt-6 sm:bg-gray-100 sm:p-4 sm:pt-6 print:gap-4">
@@ -37,7 +38,6 @@
 				<Projects items={data.projects} />
 			{/if}
 			<Skills items={data.skills} />
-			<Education items={data.education} />
 		</div>
 	</div>
 </main>

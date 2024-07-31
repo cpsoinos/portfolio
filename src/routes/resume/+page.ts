@@ -1,7 +1,6 @@
 import type { User } from '$lib/types';
 import type { PageLoad } from './$types';
 import { jobs } from '$lib/jobs';
-import { projects } from '$lib/projects';
 import { education } from '$lib/education';
 import { skills } from '$lib/skills';
 
@@ -22,11 +21,11 @@ const user: User = {
 	]
 };
 
-export const load: PageLoad = () => {
+export const load: PageLoad = ({ data }) => {
 	return {
 		user,
 		jobs,
-		projects,
+		projects: data.projects,
 		education,
 		skills
 	};

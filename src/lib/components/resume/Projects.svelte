@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Icon from '$lib/components/Icon.svelte';
+	import { formatDownloadsNumber } from '$lib/formatDownloadsNumber';
 	import type { ProjectItem } from '$lib/types';
 	import ResumeSection from './ResumeSection.svelte';
 
@@ -30,16 +31,24 @@
 					{@html item.description}
 				</p>
 			{/if}
-			{#if item.bulletPoints?.length}
-				<ul class="wysiwyg list-disc ps-4">
-					{#each item.bulletPoints as bulletPoint}
-						<li class="text-sm text-gray-900 print:text-2xs print:leading-normal">
-							<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-							{@html bulletPoint}
-						</li>
-					{/each}
-				</ul>
-			{/if}
+			<ul class="wysiwyg list-disc ps-4">
+				{#if item.github?.stars}
+					<li class="text-sm text-gray-900 print:text-2xs print:leading-normal">
+						{item.github.stars} stars on GitHub
+					</li>
+				{/if}
+				{#if item.npm?.weeklyDownloads}
+					<li class="text-sm text-gray-900 print:text-2xs print:leading-normal">
+						{formatDownloadsNumber(item.npm.weeklyDownloads)} weekly downloads from NPM
+					</li>
+				{/if}
+				{#each item.bulletPoints ?? [] as bulletPoint}
+					<li class="text-sm text-gray-900 print:text-2xs print:leading-normal">
+						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+						{@html bulletPoint}
+					</li>
+				{/each}
+			</ul>
 		</div>
 	{/each}
 </ResumeSection>
