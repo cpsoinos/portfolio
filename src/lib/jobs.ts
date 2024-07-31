@@ -47,7 +47,7 @@ export const jobs: ExperienceItem[] = [
 		company: 'The Public Theater',
 		website: { href: 'https://hwap.anderapps.com', text: 'HWAP App' },
 		location: 'Brooklyn, NY (remote)',
-		title: 'Contract Software Engineer',
+		title: 'Contract Software Engineer (part-time)',
 		startDate: new Date('2021-08-12'),
 		endDate: new Date('2022-06-12'),
 		bulletPoints: [
@@ -60,7 +60,7 @@ export const jobs: ExperienceItem[] = [
 		company: 'Sensory Interactive',
 		website: { href: 'https://vimeo.com/639565861', text: 'Video of in-lobby display' },
 		location: 'Brooklyn, NY (remote)',
-		title: 'Contract Software Engineer',
+		title: 'Contract Software Engineer (part-time)',
 		startDate: new Date('2021-06-07'),
 		endDate: new Date('2021-07-30'),
 		bulletPoints: [
@@ -83,7 +83,7 @@ export const jobs: ExperienceItem[] = [
 	},
 	{
 		company: 'Just the Right Piece, LLC',
-		title: 'Contract Software Engineer',
+		title: 'Contract Software Engineer (part-time)',
 		location: 'Salem, NH',
 		startDate: new Date('2016-03-02'),
 		endDate: new Date('2019-01-12'),
