@@ -2,6 +2,23 @@ import type { ProjectItem } from './types';
 
 export const projects: ProjectItem[] = [
 	{
+		title: 'Image Uploader',
+		links: [
+			{
+				href: 'https://gfe-image-uploader.anderapps.com',
+				text: 'gfe-image-uploader.anderapps.com',
+				icon: 'mdi:open-in-new'
+			},
+			{
+				href: 'http://github.com/cpsoinos/gfe-image-uploader',
+				text: 'cpsoinos/gfe-image-uploader',
+				icon: 'devicon:github'
+			}
+		],
+		description:
+			'A <a href="https://www.greatfrontend.com/projects/s/image-uploader-with-next-js-and-tailwind-css-72719a3d" target="_blank">GreatFrontEnd Projects submission</a> created with NextJS, TailwindCSS, and Cloudflare. Allows a user to upload up to 5 images, crop them, and select one as a profile image.'
+	},
+	{
 		title: 'nuxt-svgo',
 		links: [
 			{
