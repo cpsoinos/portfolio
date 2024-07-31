@@ -25,10 +25,24 @@ export interface ExperienceItem {
 }
 
 export interface ProjectItem {
+	github?: GithubStats;
+	npm?: NpmStats;
 	title: string;
 	links?: Link[];
 	description?: string;
 	bulletPoints?: string[];
+}
+
+export interface GithubStats {
+	username: string;
+	repo: string;
+	stars?: number;
+}
+
+export interface NpmStats {
+	package: string;
+	weeklyDownloads?: number;
+	downloads?: number;
 }
 
 export interface EducationItem {
