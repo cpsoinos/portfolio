@@ -27,7 +27,7 @@
 			<Projects items={data.projects} class="sm:hidden" />
 		{/if}
 		<Skills items={data.skills} class="sm:hidden" />
-		<Education items={data.education} class="sm:hidden" />
+		<Education items={data.education} />
 	</div>
 
 	<div
@@ -37,6 +37,5 @@
 			<Projects items={data.projects} />
 		{/if}
 		<Skills items={data.skills} />
-		<Education items={data.education} />
 	</div>
 </div>
