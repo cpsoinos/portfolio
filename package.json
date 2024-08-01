@@ -27,6 +27,7 @@
 	},
 	"dependencies": {
 		"@octokit/core": "^6.1.2",
+		"@unpic/svelte": "^0.0.53",
 		"posthog-js": "^1.153.0"
 	},
 	"devDependencies": {
