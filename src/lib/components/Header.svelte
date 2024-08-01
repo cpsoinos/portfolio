@@ -6,7 +6,7 @@
 	class="container mx-auto flex items-center justify-between bg-gray-900 p-4 font-display text-white"
 >
 	<a href="/" class="flex items-center space-x-4 hover:no-underline">
-		<Image src="/icon-dark.svg" layout="constrained" width={40} height={40} alt="Logo" />
+		<Image src="/logo-dark.svg" layout="constrained" width={40} height={40} alt="Logo" />
 		<span class="text-xl font-bold">Corey Psoinos</span>
 	</a>
 	<nav class="space-x-4">
