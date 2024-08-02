@@ -8,7 +8,8 @@ const ICONS = [
 	'mdi:location',
 	'ph:moon-duotone',
 	'ph:sun-duotone',
-	'heroicons:computer-desktop-solid'
+	'heroicons:computer-desktop-solid',
+	'lucide:more-vertical'
 ];
 
 export async function preloadIcons() {
