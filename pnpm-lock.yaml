@@ -17,6 +17,15 @@ importers:
       posthog-js:
         specifier: ^1.153.0
         version: 1.153.0
+      svelte-headlessui:
+        specifier: ^0.0.42
+        version: 0.0.42(svelte@4.2.18)
+      svelte-transition:
+        specifier: ^0.0.17
+        version: 0.0.17(svelte@4.2.18)
+      tailwind-merge:
+        specifier: ^2.4.0
+        version: 2.4.0
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20240725.0
@@ -2303,6 +2312,11 @@ packages:
       svelte:
         optional: true
 
+  svelte-headlessui@0.0.42:
+    resolution: {integrity: sha512-u3inaaFTQmRo/JX42zxXZE6qXv62T0tfQ7+9Ljqosqj5QN3IyoHb8bQsmbJIzY0vZAZxyUSvoNpZLz4RTLO+1A==}
+    peerDependencies:
+      svelte: ^4.0.0 || ^5.0.0
+
   svelte-hmr@0.16.0:
     resolution: {integrity: sha512-Gyc7cOS3VJzLlfj7wKS0ZnzDVdv3Pn2IuVeJPk9m2skfhcu5bq3wtIZyQGggr7/Iim5rH5cncyQft/kRLupcnA==}
     engines: {node: ^12.20 || ^14.13.1 || >= 16}
@@ -2346,9 +2360,17 @@ packages:
       typescript:
         optional: true
 
+  svelte-transition@0.0.17:
+    resolution: {integrity: sha512-df3kJdJogRNDGiEwJSb7Pdk8/7ZTcQapHhtQ5VicaT/oUP/BNH5qR5Q3sKvptBvOD0uJSzjjMVC5oLwdgjUdRw==}
+    peerDependencies:
+      svelte: ^3.59.1 || ^4.0.0 || ^5.0.0
+
   svelte@4.2.18:
     resolution: {integrity: sha512-d0FdzYIiAePqRJEb90WlJDkjUEx42xhivxN8muUBmfZnP+tzUgz12DJ2hRJi8sIHCME7jeK1PTMgKPSfTd8JrA==}
     engines: {node: '>=16'}
+
+  tailwind-merge@2.4.0:
+    resolution: {integrity: sha512-49AwoOQNKdqKPd9CViyH5wJoSKsCDjUlzL8DxuGp3P1FsGY36NJDAa18jLZcaHAUUuTj+JB8IAo8zWgBNvBF7A==}
 
   tailwindcss@3.4.7:
     resolution: {integrity: sha512-rxWZbe87YJb4OcSopb7up2Ba4U82BoiSGUdoDr3Ydrg9ckxFS/YWsvhN323GMcddgU65QRy7JndC7ahhInhvlQ==}
@@ -4622,6 +4644,10 @@ snapshots:
     optionalDependencies:
       svelte: 4.2.18
 
+  svelte-headlessui@0.0.42(svelte@4.2.18):
+    dependencies:
+      svelte: 4.2.18
+
   svelte-hmr@0.16.0(svelte@4.2.18):
     dependencies:
       svelte: 4.2.18
@@ -4640,6 +4666,10 @@ snapshots:
       postcss-load-config: 4.0.2(postcss@8.4.40)
       typescript: 5.5.4
 
+  svelte-transition@0.0.17(svelte@4.2.18):
+    dependencies:
+      svelte: 4.2.18
+
   svelte@4.2.18:
     dependencies:
       '@ampproject/remapping': 2.3.0
@@ -4656,6 +4686,8 @@ snapshots:
       locate-character: 3.0.0
       magic-string: 0.30.11
       periscopic: 3.1.0
+
+  tailwind-merge@2.4.0: {}
 
   tailwindcss@3.4.7:
     dependencies:

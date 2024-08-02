@@ -28,7 +28,10 @@
 	"dependencies": {
 		"@octokit/core": "^6.1.2",
 		"@unpic/svelte": "^0.0.53",
-		"posthog-js": "^1.153.0"
+		"posthog-js": "^1.153.0",
+		"svelte-headlessui": "^0.0.42",
+		"svelte-transition": "^0.0.17",
+		"tailwind-merge": "^2.4.0"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20240725.0",

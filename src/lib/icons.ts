@@ -6,9 +6,9 @@ const ICONS = [
 	'logos:npm-icon',
 	'mdi:open-in-new',
 	'mdi:location',
-	'lucide:moon-star',
-	'lucide:sun',
-	'lucide:sun-moon'
+	'ph:moon-duotone',
+	'ph:sun-duotone',
+	'heroicons:computer-desktop-solid'
 ];
 
 export async function preloadIcons() {
