@@ -38,6 +38,7 @@
 		"@dword-design/eslint-plugin-import-alias": "^5.0.0",
 		"@iconify/svelte": "^4.0.2",
 		"@sveltejs/adapter-cloudflare": "^4.7.0",
+		"@sveltejs/enhanced-img": "^0.3.1",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/eslint": "^9.6.0",

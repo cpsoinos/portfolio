@@ -22,24 +22,18 @@
 
 <div class="pointer-events-none absolute inset-x-0 top-0 z-20 flex justify-center overflow-hidden">
 	<div class="flex w-[108rem] flex-none justify-end">
-		<picture>
-			<!-- <source srcset="/_next/static/media/docs@30.8b9a76a2.avif" type="image/avif" /> -->
-			<img
-				src="/bg-light.png"
-				alt=""
-				class="w-[71.75rem] max-w-none flex-none dark:hidden"
-				decoding="async"
-			/>
-		</picture>
-		<picture>
-			<!-- <source srcset="/_next/static/media/docs-dark@30.1a9f8cbf.avif" type="image/avif" /> -->
-			<img
-				src="/bg-dark.png"
-				alt=""
-				class="hidden w-[90rem] max-w-none flex-none dark:block"
-				decoding="async"
-			/>
-		</picture>
+		<enhanced:img
+			src="$lib/assets/images/bg-light.png"
+			alt=""
+			class="w-[71.75rem] max-w-none flex-none dark:hidden"
+			decoding="async"
+		/>
+		<enhanced:img
+			src="$lib/assets/images/bg-dark.png"
+			alt=""
+			class="hidden w-[90rem] max-w-none flex-none dark:block"
+			decoding="async"
+		/>
 	</div>
 </div>
 
