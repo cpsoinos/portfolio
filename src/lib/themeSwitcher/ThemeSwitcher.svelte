@@ -35,7 +35,8 @@
 	}
 </script>
 
-<div class="flex w-full flex-col items-center justify-center">
+<!-- desktop -->
+<div class="hidden w-full flex-col items-center justify-center md:flex">
 	<button
 		use:listbox.button
 		on:change={onChange}
@@ -86,4 +87,29 @@
 			</ul>
 		</Transition>
 	</div>
+</div>
+
+<!-- mobile -->
+<div class="grid grid-cols-3 divide-x md:hidden">
+	<button class="flex justify-center py-1 pr-1" on:click={() => theme.setTheme('light')}>
+		<Icon
+			icon="ph:sun-duotone"
+			class={twJoin('size-5', $theme === 'light' && 'text-indigo-500 dark:text-indigo-300')}
+		/>
+		<span class="sr-only">Light</span>
+	</button>
+	<button class="flex justify-center p-1" on:click={() => theme.setTheme('dark')}>
+		<Icon
+			icon="ph:moon-duotone"
+			class={twJoin('size-5', $theme === 'dark' && 'text-indigo-500 dark:text-indigo-300')}
+		/>
+		<span class="sr-only">Dark</span>
+	</button>
+	<button class="flex justify-center py-1 pl-1" on:click={() => theme.setTheme('system')}>
+		<Icon
+			icon="heroicons:computer-desktop-solid"
+			class={twJoin('size-5', $theme === 'system' && 'text-indigo-500 dark:text-indigo-300')}
+		/>
+		<span class="sr-only">System</span>
+	</button>
 </div>
