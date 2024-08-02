@@ -22,7 +22,22 @@
 
 <header class="flex items-center justify-between py-4 font-display dark:text-white">
 	<a href="/" class="flex items-center gap-4 hover:no-underline">
-		<Image src="/logo-dark.svg" layout="constrained" width={40} height={40} alt="Logo" />
+		<Image
+			src="/logo-dark.svg"
+			layout="constrained"
+			width={40}
+			height={40}
+			alt="Logo"
+			class="hidden size-10 dark:block"
+		/>
+		<Image
+			src="/logo-light.svg"
+			layout="constrained"
+			width={40}
+			height={40}
+			alt="Logo"
+			class="block size-10 dark:hidden"
+		/>
 		<span class="text-xl font-bold">Corey Psoinos</span>
 	</a>
 
@@ -78,3 +93,9 @@
 		</Transition>
 	</div>
 </header>
+
+<!-- <style lang="postcss">
+  .logo {
+
+  }
+</style> -->
