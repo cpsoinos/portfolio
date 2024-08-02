@@ -18,8 +18,6 @@
 	function onChange() {
 		menu.close();
 	}
-
-	$: console.log({ menu });
 </script>
 
 <header class="flex items-center justify-between py-4 font-display dark:text-white">
@@ -63,7 +61,7 @@
 				class="absolute right-0 mt-2 w-40 origin-top-right divide-y divide-slate-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:divide-slate-600 dark:bg-slate-800"
 			>
 				{#each links as link}
-					<div class="px-1 py-1">
+					<div class="p-1">
 						<a
 							href={link.href}
 							class="group flex w-full items-center rounded-md px-2 py-2 text-sm"
