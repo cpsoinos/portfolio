@@ -1,0 +1,24 @@
+{
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
+	"eslint.useFlatConfig": true,
+	"oxc_language_server.configPath": "eslint.config.js",
+	"eslint.codeActionsOnSave.rules": null,
+	"eslint.probe": [
+		"astro",
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"html",
+		"mdx",
+		"vue",
+		"markdown",
+		"json",
+		"jsonc",
+		"svelte"
+	],
+	"eslint.validate": ["javascript", "javascriptreact", "svelte"]
+}
