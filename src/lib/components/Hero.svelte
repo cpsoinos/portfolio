@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { buildImageUrl, TRANSFORM_BASE_URL } from '$lib/images';
+	import { buildImageUrl } from '$lib/images';
 	import { Image } from '@unpic/svelte';
 
 	const title = "Hi. I'm Corey.";
