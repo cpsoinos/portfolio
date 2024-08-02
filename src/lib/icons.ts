@@ -5,7 +5,10 @@ const ICONS = [
 	'devicon:linkedin',
 	'logos:npm-icon',
 	'mdi:open-in-new',
-	'mdi:location'
+	'mdi:location',
+	'lucide:moon-star',
+	'lucide:sun',
+	'lucide:sun-moon'
 ];
 
 export async function preloadIcons() {
