@@ -1,5 +1,4 @@
 import { writable, type Readable } from 'svelte/store';
-import { themeSwitcherDefaultColors, type ThemeSwitcherColors } from './colors';
 import { setThemeStore } from './context';
 import { browser } from '$app/environment';
 
@@ -21,23 +20,14 @@ export const defaultLabels = {
 
 export interface ThemeSwitcherConfig {
 	key: string;
-	colors: ThemeSwitcherColors;
 	labels: ThemeSwitcherLabels;
 }
 
 export interface ThemeStore extends Readable<Theme> {
 	setTheme: (value: Theme) => void;
-	colors: ThemeSwitcherColors;
-	labels: ThemeSwitcherLabels;
 }
 
-export function createThemeSwitcher(config?: Partial<ThemeSwitcherConfig>) {
-	const { colors, labels } = {
-		colors: themeSwitcherDefaultColors,
-		labels: defaultLabels,
-		...config
-	};
-
+export function createThemeSwitcher() {
 	let theme: Theme = 'system';
 
 	if (browser) {
@@ -59,9 +49,7 @@ export function createThemeSwitcher(config?: Partial<ThemeSwitcherConfig>) {
 
 	const store: ThemeStore = {
 		subscribe,
-		setTheme,
-		colors,
-		labels
+		setTheme
 	};
 
 	setThemeStore(store);
