@@ -2,4 +2,6 @@
 	import Hero from '$lib/components/Hero.svelte';
 </script>
 
-<Hero />
+<div class="pt-10 md:pt-40">
+	<Hero />
+</div>
