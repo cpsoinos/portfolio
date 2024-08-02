@@ -3,7 +3,7 @@
 </script>
 
 <header
-	class="container mx-auto flex items-center justify-between bg-gray-900 p-4 font-display text-white"
+	class="container mx-auto flex items-center justify-between p-4 font-display dark:text-white"
 >
 	<a href="/" class="flex items-center space-x-4 hover:no-underline">
 		<Image src="/logo-dark.svg" layout="constrained" width={40} height={40} alt="Logo" />
