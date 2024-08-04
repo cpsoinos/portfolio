@@ -21,6 +21,7 @@
 	});
 
 	let selectedThemeIcon: string;
+
 	$: if (browser) {
 		if ($theme === 'system') {
 			const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -46,14 +47,17 @@
 		class="relative w-full rounded-lg bg-white focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 dark:bg-slate-900 dark:focus-visible:border-indigo-300 dark:focus-visible:ring-offset-indigo-300"
 	>
 		<span class="sr-only">Theme</span>
-		<Icon
-			icon={selectedThemeIcon}
-			class={twJoin(
-				'size-5',
-				$listbox.selected.value !== 'system' && 'text-indigo-500 dark:text-indigo-300'
-			)}
-		/>
-		<span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2"> </span>
+		{#if selectedThemeIcon}
+			<Icon
+				icon={selectedThemeIcon}
+				class={twJoin(
+					'size-5',
+					$listbox.selected.value !== 'system' && 'text-indigo-500 dark:text-indigo-300'
+				)}
+			/>
+		{:else}
+			<div class="size-5" />
+		{/if}
 	</button>
 	<div class="relative">
 		<Transition
