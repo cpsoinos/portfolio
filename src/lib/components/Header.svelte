@@ -17,7 +17,6 @@
 	const links = [
 		{ text: 'Home', href: '/' },
 		{ text: 'Expertise', href: '/#expertise' },
-		{ text: 'About', href: '/#about' },
 		{ text: 'Projects', href: '/#projects' },
 		{ text: 'Contact', href: '/#contact' }
 	];
