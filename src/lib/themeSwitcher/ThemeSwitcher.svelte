@@ -15,17 +15,20 @@
 		{ label: 'System', value: 'system', icon: 'heroicons:computer-desktop-solid' }
 	];
 
+	const listbox = createListbox({
+		label: 'Actions',
+		selected: options.find((o) => o.value === $theme) ?? options[2]
+	});
+
 	let selectedThemeIcon: string;
 	$: if (browser) {
 		if ($theme === 'system') {
 			const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-			selectedThemeIcon = prefersDark ? 'lucide:moon-star' : 'lucide:sun';
+			selectedThemeIcon = prefersDark ? 'ph:moon-duotone' : 'ph:sun-duotone';
 		} else {
-			selectedThemeIcon = options.find((o) => o.value === $theme)?.icon ?? 'lucide:sun';
+			selectedThemeIcon = $listbox.selected?.icon ?? 'ph:sun-duotone';
 		}
 	}
-
-	const listbox = createListbox({ label: 'Actions', selected: options[2] });
 
 	function onChange(e: Event) {
 		const {
@@ -36,7 +39,7 @@
 </script>
 
 <!-- desktop -->
-<div class="hidden w-full flex-col items-center justify-center md:flex">
+<div class="hidden w-full flex-col md:flex">
 	<button
 		use:listbox.button
 		on:change={onChange}
@@ -61,7 +64,7 @@
 		>
 			<ul
 				use:listbox.items
-				class="absolute mt-1 max-h-60 w-32 overflow-auto rounded-md bg-white py-1 text-sm shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-slate-800"
+				class="absolute right-0 mt-1 max-h-60 w-32 overflow-auto rounded-md bg-white py-1 text-sm shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-slate-800"
 			>
 				{#each options as value}
 					{@const active = $listbox.active === value}
