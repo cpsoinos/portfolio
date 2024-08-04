@@ -31,7 +31,7 @@
 
 <header
 	class={twJoin(
-		'sticky top-0 z-40 w-full font-display backdrop-blur transition-colors duration-500 supports-[backdrop-filter]:bg-white/60 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] dark:text-white',
+		'sticky top-0 z-40 w-full font-display backdrop-blur transition-colors duration-500 supports-[backdrop-filter]:bg-white/60 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] dark:text-white print:hidden',
 		isScrolled && 'bg-white dark:bg-slate-900/75',
 		!isScrolled && 'bg-white/95 dark:bg-transparent'
 	)}

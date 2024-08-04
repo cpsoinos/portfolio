@@ -20,7 +20,9 @@
 	/>
 </svelte:head>
 
-<div class="pointer-events-none absolute inset-x-0 top-0 z-20 flex justify-center overflow-hidden">
+<div
+	class="pointer-events-none absolute inset-x-0 top-0 z-20 flex justify-center overflow-hidden print:hidden"
+>
 	<div class="flex w-[108rem] flex-none justify-end">
 		<enhanced:img
 			src="$lib/assets/images/bg-light.png"

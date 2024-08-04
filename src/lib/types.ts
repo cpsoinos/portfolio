@@ -10,7 +10,10 @@ export interface User {
 export interface Link {
 	href: string;
 	text: string;
-	icon?: string;
+	icon?: {
+		dark: string;
+		light: string;
+	};
 }
 
 export interface ExperienceItem {

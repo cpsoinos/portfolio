@@ -12,7 +12,9 @@
 				<h3 class="text-sm uppercase print:text-xs">{skill.title}</h3>
 				<ul class="list-disc ps-6">
 					{#each skill.items as item}
-						<li class="text-sm text-gray-900 print:text-2xs print:leading-normal">
+						<li
+							class="text-sm text-slate-900 dark:text-slate-400 print:text-2xs print:leading-normal"
+						>
 							{item}
 						</li>
 					{/each}
