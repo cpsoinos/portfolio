@@ -42,7 +42,7 @@
 	</a>
 
 	<!-- desktop -->
-	<nav class="hidden items-center gap-4 font-mono md:flex">
+	<nav class="hidden items-center gap-8 font-mono md:flex">
 		{#each links as link}
 			<a href={link.href} class="hover:text-indigo-700 dark:hover:text-indigo-400">{link.text}</a>
 		{/each}
@@ -93,9 +93,3 @@
 		</Transition>
 	</div>
 </header>
-
-<!-- <style lang="postcss">
-  .logo {
-
-  }
-</style> -->

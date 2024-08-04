@@ -11,8 +11,15 @@
 
 <section class="flex grid-cols-3 flex-col items-center gap-8 md:grid md:gap-0">
 	<div class="col-span-2 flex flex-col gap-10">
-		<h1 class="font-display text-4xl text-slate-900 dark:text-slate-50">{title}</h1>
+		<h1 class="font-display text-6xl text-slate-900 md:text-8xl dark:text-slate-50">{title}</h1>
 		<p class="font-mono">{subtitle}</p>
 	</div>
-	<Image class="col-span-1" width={420} height={440} src={heroImgUrl} alt="Illustration of Corey" />
+	<Image
+		class="col-span-1"
+		width={420}
+		height={440}
+		src={heroImgUrl}
+		alt="Illustration of Corey"
+		priority
+	/>
 </section>
