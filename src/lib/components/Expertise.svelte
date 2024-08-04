@@ -116,7 +116,7 @@
 </script>
 
 <section id="expertise" class="flex flex-col gap-6">
-	<h2 class="font-display text-4xl text-slate-900 dark:text-slate-400">Expertise</h2>
+	<h2 class="font-display text-4xl text-slate-900 dark:text-slate-50">Expertise</h2>
 	<p class="font-mono">
 		I've been working professionally as a software engineer for close to 10 years. While my focus
 		for the past 3-4 has been on the frontend, I consider myself to be a full-stack. I excel with
