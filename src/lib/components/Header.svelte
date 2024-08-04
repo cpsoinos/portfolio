@@ -9,10 +9,10 @@
 
 	const links = [
 		{ text: 'Home', href: '/' },
-		{ text: 'About', href: '/about' },
-		{ text: 'Projects', href: '/projects' },
-		{ text: 'Skills', href: '/skills' },
-		{ text: 'Contact', href: '/contact' }
+		{ text: 'Expertise', href: '/#expertise' },
+		{ text: 'About', href: '/#about' },
+		{ text: 'Projects', href: '/#projects' },
+		{ text: 'Contact', href: '/#contact' }
 	];
 
 	function onChange() {
