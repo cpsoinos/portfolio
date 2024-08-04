@@ -34,6 +34,15 @@ export interface ProjectItem {
 	links?: Link[];
 	description?: string;
 	bulletPoints?: string[];
+	images?: {
+		src: string;
+		alt: string;
+		aspectRatio: number;
+	}[];
+	videos?: {
+		src: string;
+		alt: string;
+	}[];
 }
 
 export interface GithubStats {
