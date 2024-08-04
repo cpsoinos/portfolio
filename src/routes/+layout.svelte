@@ -37,8 +37,8 @@
 	</div>
 </div>
 
-<div class="container mx-auto px-4">
-	<Header />
+<Header />
+<div class="max-w-8xl mx-auto px-4 sm:px-6 md:px-8">
 	<slot />
 </div>
 
