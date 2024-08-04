@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Icon from './Icon.svelte';
+	import Icon from '$lib/components/Icon.svelte';
 	import { buildImageUrl } from '$lib/images';
 	import { Image } from '@unpic/svelte';
 
