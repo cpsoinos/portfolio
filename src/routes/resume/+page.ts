@@ -6,7 +6,7 @@ import { skills } from '$lib/skills';
 
 const user: User = {
 	name: 'Corey Psoinos',
-	email: 'coreypsoinos@gmail.com',
+	email: 'corey@coreypsoinos.dev',
 	phone: '(978) 835-0558',
 	location: 'Brooklyn, NY',
 	summary:

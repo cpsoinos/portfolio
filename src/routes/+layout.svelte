@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '$lib/assets/styles/app.postcss';
+	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import { createThemeSwitcher } from '$lib/themeSwitcher/theme';
 	import Theme from '$lib/themeSwitcher/Theme.svelte';
@@ -43,5 +44,6 @@
 <div class="container mx-auto px-4 sm:px-6 md:px-8">
 	<slot />
 </div>
+<Footer />
 
 <Theme />

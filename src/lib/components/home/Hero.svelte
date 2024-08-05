@@ -9,10 +9,18 @@
 	const heroImgUrl = buildImageUrl('hero-illustration.png');
 </script>
 
-<section class="flex grid-cols-3 flex-col items-center gap-8 md:grid md:gap-0">
+<section class="flex grid-cols-3 flex-col items-center gap-8 md:grid">
 	<div class="col-span-2 flex flex-col gap-10">
 		<h1 class="font-display text-6xl text-slate-900 md:text-8xl dark:text-slate-50">{title}</h1>
 		<p class="font-mono">{subtitle}</p>
+		<div class="flex justify-end">
+			<a
+				href="/resume"
+				class="rounded bg-indigo-400 px-4 py-2.5 font-mono text-slate-50 hover:bg-indigo-500 dark:bg-indigo-500 dark:hover:bg-indigo-400"
+			>
+				View my resume
+			</a>
+		</div>
 	</div>
 	<Image
 		class="col-span-1"
