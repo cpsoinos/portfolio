@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '@fontsource/economica';
+	import '@fontsource-variable/roboto-mono';
 	import '$lib/assets/styles/app.postcss';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
@@ -8,19 +9,6 @@
 
 	createThemeSwitcher();
 </script>
-
-<svelte:head>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-		rel="stylesheet"
-	/>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-		rel="stylesheet"
-	/>
-</svelte:head>
 
 <div
 	class="pointer-events-none absolute inset-x-0 top-0 z-20 flex justify-center overflow-hidden print:hidden"

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@fontsource-variable/roboto-mono':
+        specifier: ^5.0.19
+        version: 5.0.19
       '@fontsource/economica':
         specifier: ^5.0.20
         version: 5.0.20
@@ -588,6 +591,9 @@ packages:
   '@fastify/busboy@2.1.1':
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
+
+  '@fontsource-variable/roboto-mono@5.0.19':
+    resolution: {integrity: sha512-EGHx+Av6qNZf1XUM69eE1dwG3vtZHTpRETlkgt9BoRcN0T9xG+Boo/TzznmhI40CLI1zwBjmglEIu2qNI462Vw==}
 
   '@fontsource/economica@5.0.20':
     resolution: {integrity: sha512-4z3h+BQVN8lmXvyQr12gsKsw1gJbVuUrvUETBsAzb6rHJPr4cz8LiIYtGf9+O+AWQQykSbl5WSCHTs+KJAm/sg==}
@@ -3150,6 +3156,8 @@ snapshots:
   '@eslint/object-schema@2.1.4': {}
 
   '@fastify/busboy@2.1.1': {}
+
+  '@fontsource-variable/roboto-mono@5.0.19': {}
 
   '@fontsource/economica@5.0.20': {}
 
