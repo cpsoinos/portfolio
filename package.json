@@ -26,6 +26,7 @@
 		"package.json": "sort-package-json"
 	},
 	"dependencies": {
+		"@fontsource/economica": "^5.0.20",
 		"@octokit/core": "^6.1.2",
 		"posthog-js": "^1.153.0"
 	},

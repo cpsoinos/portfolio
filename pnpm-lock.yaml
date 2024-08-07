@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@fontsource/economica':
+        specifier: ^5.0.20
+        version: 5.0.20
       '@octokit/core':
         specifier: ^6.1.2
         version: 6.1.2
@@ -567,6 +570,9 @@ packages:
   '@fastify/busboy@2.1.1':
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
+
+  '@fontsource/economica@5.0.20':
+    resolution: {integrity: sha512-4z3h+BQVN8lmXvyQr12gsKsw1gJbVuUrvUETBsAzb6rHJPr4cz8LiIYtGf9+O+AWQQykSbl5WSCHTs+KJAm/sg==}
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -2929,6 +2935,8 @@ snapshots:
   '@eslint/object-schema@2.1.4': {}
 
   '@fastify/busboy@2.1.1': {}
+
+  '@fontsource/economica@5.0.20': {}
 
   '@humanwhocodes/module-importer@1.0.1': {}
 
