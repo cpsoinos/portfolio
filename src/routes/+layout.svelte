@@ -1,4 +1,5 @@
 <script lang="ts">
+	import '@fontsource/economica';
 	import '$lib/assets/styles/app.postcss';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
