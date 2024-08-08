@@ -65,7 +65,7 @@
 								loop
 								disablepictureinpicture
 								controlslist="nodownload"
-								class="h-[300px] rounded"
+								class="max-h-[300px] rounded"
 								height={300}
 							>
 								<source src="{BUCKET_BASE_URL}/{video.src}" type="video/webm" />
