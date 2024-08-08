@@ -29,6 +29,7 @@
 		"@fontsource-variable/roboto-mono": "^5.0.19",
 		"@fontsource/economica": "^5.0.20",
 		"@octokit/core": "^6.1.2",
+		"@splidejs/svelte-splide": "^0.2.9",
 		"@unpic/svelte": "^0.0.53",
 		"posthog-js": "^1.153.0",
 		"svelte-headlessui": "^0.0.42",

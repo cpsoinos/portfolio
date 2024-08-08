@@ -20,13 +20,13 @@ export const projects: ProjectItem[] = [
 		],
 		description:
 			'A <a href="https://www.greatfrontend.com/projects/s/image-uploader-with-next-js-and-tailwind-css-72719a3d" target="_blank">GreatFrontEnd Projects submission</a> created with NextJS, TailwindCSS, and Cloudflare. Allows a user to upload up to 5 images, crop them, and select one as a profile image.',
-		// images: [
-		// 	{
-		// 		src: 'gfe-image-uploader/profile-card.png',
-		// 		alt: 'Screenshot of a profile card with a profile image and user details',
-		// 		aspectRatio: 1.68
-		// 	}
-		// ],
+		images: [
+			{
+				src: 'gfe-image-uploader/profile-card.png',
+				alt: 'Screenshot of a profile card with a profile image and user details',
+				aspectRatio: 1.68
+			}
+		],
 		videos: [
 			{
 				src: 'gfe-image-uploader/upload-and-crop.webm',
