@@ -4,7 +4,7 @@
 
 	type $$Props = ComponentProps<Icon>;
 
-	let icon: string;
+	export let icon: string;
 
 	$: preloadedIcon = getIcon(icon);
 </script>

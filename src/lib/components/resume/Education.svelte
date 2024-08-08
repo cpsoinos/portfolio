@@ -16,7 +16,9 @@
 					>{/if}
 			</div>
 			<div class="flex items-center justify-between">
-				<span class="text-sm text-indigo-600 print:text-xs">{item.college}</span>
+				<span class="text-sm text-indigo-600 dark:text-indigo-400 print:text-xs"
+					>{item.college}</span
+				>
 				<Timespan startDate={item.startDate} endDate={item.endDate} />
 			</div>
 			<p class="text-sm print:text-2xs">{item.degree}</p>

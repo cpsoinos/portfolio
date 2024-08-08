@@ -6,7 +6,7 @@ import { skills } from '$lib/skills';
 
 const user: User = {
 	name: 'Corey Psoinos',
-	email: 'coreypsoinos@gmail.com',
+	email: 'corey@coreypsoinos.dev',
 	phone: '(978) 835-0558',
 	location: 'Brooklyn, NY',
 	summary:
@@ -15,9 +15,19 @@ const user: User = {
 		{
 			href: 'https://linkedin.com/in/cpsoinos',
 			text: 'linkedin.com/in/cpsoinos',
-			icon: 'devicon:linkedin'
+			icon: {
+				light: 'devicon:linkedin',
+				dark: 'devicon:linkedin'
+			}
 		},
-		{ href: 'https://github.com/cpsoinos', text: 'github.com/cpsoinos', icon: 'devicon:github' }
+		{
+			href: 'https://github.com/cpsoinos',
+			text: 'github.com/cpsoinos',
+			icon: {
+				light: 'skill-icons:github-dark',
+				dark: 'skill-icons:github-light'
+			}
+		}
 	]
 };
 
