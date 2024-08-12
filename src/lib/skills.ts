@@ -27,7 +27,7 @@ export const skills: SkillItem[] = [
 	},
 	{
 		title: 'Cloud & DevOps',
-		items: ['Cloudflare', 'AWS', 'Google Cloud', 'Vercel', 'Heroku', 'Docker']
+		items: ['Cloudflare', 'AWS', 'GCP', 'Vercel', 'Heroku', 'Docker']
 	},
 	{
 		title: 'Other',

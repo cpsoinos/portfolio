@@ -22,7 +22,7 @@
 		<Header user={data.user} class="col-span-2 pt-2" />
 		<ContactInfo
 			user={data.user}
-			class="col-span-1 sm:bg-slate-100 sm:px-4 sm:pt-2 dark:bg-slate-800"
+			class="col-span-1 sm:bg-slate-100 sm:px-4 sm:pt-2 sm:dark:bg-slate-800 print:px-0"
 		/>
 	</div>
 
@@ -33,7 +33,7 @@
 		</div>
 
 		<div
-			class="col-span-1 flex flex-col gap-6 pt-6 sm:bg-slate-100 sm:p-4 sm:pt-6 dark:bg-slate-800 print:gap-4"
+			class="col-span-1 flex flex-col gap-6 pt-6 sm:bg-slate-100 sm:p-4 sm:pt-6 sm:dark:bg-slate-800 print:gap-4 print:px-0"
 		>
 			{#if data.projects.length > 0}
 				<Projects items={data.projects} />
