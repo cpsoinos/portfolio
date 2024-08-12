@@ -19,7 +19,7 @@ export const projects: ProjectItem[] = [
 			}
 		],
 		description:
-			'A <a href="https://www.greatfrontend.com/projects/s/image-uploader-with-next-js-and-tailwind-css-72719a3d" target="_blank">GreatFrontEnd Projects submission</a> created with NextJS, TailwindCSS, and Cloudflare. Allows a user to upload up to 5 images, crop them, and select one as a profile image.',
+			'A <a href="https://www.greatfrontend.com/projects/s/image-uploader-with-next-js-and-tailwind-css-72719a3d" target="_blank" rel="noopener noreferrer">GreatFrontEnd Projects submission</a> created with NextJS, TailwindCSS, and Cloudflare. Allows a user to upload up to 5 images, crop them, and select one as a profile image.',
 		images: [
 			{
 				src: 'gfe-image-uploader/profile-card.png',
@@ -59,6 +59,32 @@ export const projects: ProjectItem[] = [
 				src: 'nuxtify/now-playing-2.png',
 				alt: 'Screenshot of a Spotify-like music player',
 				aspectRatio: 0.5
+			}
+		]
+	},
+	{
+		title: 'Legislator Contact Database',
+		description:
+			'A searchable, filterable database of contact information for US Senators and Representatives built for <a href="https://www.extendpua.org" target="_blank" rel="noopener noreferrer">Extend PUA<span class="material-symbols--open-in-new ml-1 print:hidden"></span></a>, an organization that fought for continuing assistance through the COVID-19 pandemic. Built with React and TailwindCSS.',
+		bulletPoints: ['Built with React and TailwindCSS', 'Hosted on Netlify'],
+		links: [
+			{
+				href: 'https://handles.extendpua.org',
+				text: 'handles.extendpua.org',
+				icon: { light: 'mdi:open-in-new', dark: 'mdi:open-in-new' }
+			}
+		],
+		images: [
+			{
+				src: 'extend-pua/handles.png',
+				alt: 'Screenshot of a searchable table of US Senators and Representatives',
+				aspectRatio: 1.8
+			}
+		],
+		videos: [
+			{
+				src: 'extend-pua/handles_search-and-filter.webm',
+				alt: 'Video demonstration of the searchable table of US Senators and Representatives'
 			}
 		]
 	},
