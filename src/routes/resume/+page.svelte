@@ -15,7 +15,7 @@
 	<meta name="description" content={data.user.summary} />
 </svelte:head>
 
-<main class="mx-auto max-w-screen-md p-4 sm:p-8 print:p-0">
+<main class="mx-auto p-4 sm:p-8 print:p-0">
 	<div
 		class="flex flex-col gap-4 border-t-8 border-indigo-600 sm:grid sm:grid-cols-3 dark:border-indigo-400"
 	>

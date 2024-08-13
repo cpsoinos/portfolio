@@ -9,10 +9,6 @@
 		}
 	}
 
-	:global(html) {
-		@apply !bg-white;
-	}
-
 	.resume {
 		@apply font-body;
 	}
