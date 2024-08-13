@@ -43,6 +43,9 @@ export interface ProjectItem {
 		src: string;
 		alt: string;
 	}[];
+	embeds?: {
+		html: string;
+	}[];
 }
 
 export interface GithubStats {

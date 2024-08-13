@@ -1,9 +1,9 @@
 <script lang="ts">
 	import '@splidejs/svelte-splide/css';
+	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
 	import { buildImageUrl, BUCKET_BASE_URL } from '$lib/images';
 	import { Image } from '@unpic/svelte';
 	import Icon from '$lib/components/Icon.svelte';
-	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
 	import type { ProjectItem } from '$lib/types';
 
 	export let project: ProjectItem;
@@ -34,7 +34,7 @@
 	<p class="wysiwyg">{@html project.description}</p>
 
 	<div class="flex flex-col items-center gap-2">
-		{#if project.images?.length || project.videos?.length}
+		{#if project.images?.length || project.videos?.length || project.embeds?.length}
 			<Splide
 				aria-label="Media for {project.title}"
 				options={{
@@ -71,6 +71,14 @@
 								<source src="{BUCKET_BASE_URL}/{video.src}" type="video/webm" />
 								Your browser does not support the video tag.
 							</video>
+						</SplideSlide>
+					{/each}
+				{/if}
+				{#if project.embeds}
+					{#each project.embeds as embed}
+						<SplideSlide class="flex flex-col items-center justify-center *:max-w-full *:rounded">
+							<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+							{@html embed.html}
 						</SplideSlide>
 					{/each}
 				{/if}
