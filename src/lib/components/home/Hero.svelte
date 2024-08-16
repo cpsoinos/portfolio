@@ -16,7 +16,7 @@
 		<div class="flex justify-center md:justify-end">
 			<a
 				href="/resume"
-				class="rounded bg-indigo-400 px-4 py-2.5 font-mono text-slate-50 hover:bg-indigo-500 dark:bg-indigo-500 dark:hover:bg-indigo-400"
+				class="duration-250 rounded bg-indigo-400 px-4 py-2.5 font-mono text-slate-50 transition-colors hover:bg-indigo-500 active:bg-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:active:bg-indigo-400/85"
 			>
 				View my resume
 			</a>
