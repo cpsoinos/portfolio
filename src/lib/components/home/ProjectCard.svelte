@@ -76,8 +76,8 @@
 								loop
 								disablepictureinpicture
 								controlslist="nodownload"
-								class="max-h-[300px] rounded"
 								height={300}
+								class="max-h-[300px] rounded"
 							>
 								{#each video as { src, format }}
 									<source src="{BUCKET_BASE_URL}/{src}" type="video/{format}" />

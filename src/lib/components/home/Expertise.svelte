@@ -121,8 +121,8 @@
 		I've been working professionally as a software engineer for close to 10 years. While my focus
 		for the past 3-4 has been on the frontend, I consider myself to be a full-stack. I excel with
 		React, Svelte, and have professional experience with Vue. Currently, my favorite frontend
-		framework is SvelteKit, though I’ve been using NextJS recently as well both professionally and
-		recreationally.
+		framework is SvelteKit, though I’ve been using NextJS recently both professionally and
+		recreationally as well.
 	</p>
 
 	<div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">

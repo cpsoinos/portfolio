@@ -16,7 +16,6 @@ export const skills: SkillItem[] = [
 			'Tailwind CSS',
 			'Sass',
 			'Node',
-			'V8',
 			'Ruby',
 			'Ruby on Rails'
 		]
