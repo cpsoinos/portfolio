@@ -7,7 +7,7 @@
 		{
 			title: 'In-App Image Cropping Tool',
 			description:
-				'An in-app image cropping tool, embedded within a larger application. Built while working at Flowcode, using Svelte, TailwindCSS, and the Cropper.js library.',
+				'An in-app image cropping tool, embedded within a larger application. Built while working at <a href="https://flowcode.com" target="_blank" rel="noopener noreferrer">Flowcode<span class="material-symbols--open-in-new ml-1 print:hidden"></span></a>, using Svelte, TailwindCSS, and the Cropper.js library.',
 			videos: [
 				[
 					{
@@ -22,9 +22,9 @@
 			]
 		},
 		{
-			title: 'Builder',
+			title: 'Conversion Suite Template Builder',
 			description:
-				'A visual Conversion Suite Template builder, built while working at Flowcode. The builder allows users to create and customize templates for their campaigns. Built using Svelte/SvelteKit, TailwindCSS, and XYFlow.',
+				'A visual flow template builder, built while I was working at <a href="https://flowcode.com" target="_blank" rel="noopener noreferrer">Flowcode<span class="material-symbols--open-in-new ml-1 print:hidden"></span></a>. The builder allows users to create and customize templates for their campaigns. Built using Svelte/SvelteKit, TailwindCSS, and XYFlow.',
 			videos: [
 				[
 					{
@@ -56,7 +56,7 @@
 				}
 			],
 			description:
-				'A <a href="https://www.greatfrontend.com/projects/s/image-uploader-with-next-js-and-tailwind-css-72719a3d" target="_blank" rel="noopener noreferrer">GreatFrontEnd Projects submission</a> created with NextJS, TailwindCSS, and Cloudflare. Allows a user to upload and crop up to 5 images, and select one as a profile image.',
+				'A <a href="https://www.greatfrontend.com/projects/s/image-uploader-with-next-js-and-tailwind-css-72719a3d" target="_blank" rel="noopener noreferrer">GreatFrontEnd Projects submission<span class="material-symbols--open-in-new ml-1 print:hidden"></span></a> created with NextJS, TailwindCSS, and Cloudflare. Allows a user to upload and crop up to 5 images, and select one as a profile image.',
 			images: [
 				{
 					src: 'gfe-image-uploader/profile-card.png',
