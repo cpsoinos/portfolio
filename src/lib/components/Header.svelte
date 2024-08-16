@@ -30,15 +30,13 @@
 
 <header
 	class={twJoin(
-		'sticky top-0 z-40 w-full font-display backdrop-blur transition-colors duration-500 supports-[backdrop-filter]:bg-white/60 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] dark:text-white print:hidden',
+		'sticky top-0 z-40 w-full border-b border-slate-900/10 font-display backdrop-blur transition-colors duration-500 supports-[backdrop-filter]:bg-white/60 dark:border-slate-50/[0.06] dark:text-white print:hidden',
 		isScrolled && 'bg-white dark:bg-slate-900/75',
 		!isScrolled && 'bg-white/95 dark:bg-transparent'
 	)}
 >
 	<div class="max-w-8xl mx-auto">
-		<div
-			class="mx-4 border-b border-slate-900/10 py-4 lg:mx-0 lg:border-0 lg:px-8 dark:border-slate-300/10"
-		>
+		<div class="mx-4 py-4 lg:mx-0 lg:px-8">
 			<div class="flex items-center justify-between">
 				<a href="/" class="flex items-center gap-4 hover:no-underline">
 					<Image
