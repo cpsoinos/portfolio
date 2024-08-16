@@ -222,7 +222,7 @@
 			<ProjectCard
 				{project}
 				mediaSide={i % 2 === 0 ? 'left' : 'right'}
-				class={twJoin(hasMedia && 'col-span-2 md:grid-cols-2')}
+				class={twJoin('col-span-2 md:col-span-1', hasMedia && 'md:col-span-2 md:grid-cols-2')}
 			/>
 		{/each}
 	</div>

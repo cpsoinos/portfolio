@@ -11,11 +11,11 @@
 	export let mediaSide: 'left' | 'right' = 'left';
 </script>
 
-<div class={twMerge('grid items-center gap-3 rounded-lg', $$restProps.class)}>
+<div class={twMerge('grid items-center gap-3 rounded-lg md:gap-8', $$restProps.class)}>
 	<div
 		class="flex flex-col gap-3"
-		class:order-1={mediaSide === 'right'}
-		class:order-2={mediaSide === 'left'}
+		class:md:order-1={mediaSide === 'left'}
+		class:md:order-2={mediaSide === 'right'}
 	>
 		<h3 class="font-display text-2xl text-slate-900 dark:text-slate-50">{project.title}</h3>
 		{#if project.links}
@@ -43,9 +43,9 @@
 
 	{#if project.images?.length || project.videos?.length || project.embeds?.length}
 		<div
-			class="flex flex-col items-center gap-2"
-			class:order-1={mediaSide === 'left'}
-			class:order-2={mediaSide === 'right'}
+			class="project-media-bg flex flex-col items-center gap-2 py-8"
+			class:order-1={mediaSide === 'right'}
+			class:order-2={mediaSide === 'left'}
 		>
 			<Splide
 				aria-label="Media for {project.title}"
@@ -114,7 +114,11 @@
 	}
 
 	:global(.splide) {
-		@apply px-16 pb-8;
+		@apply px-16;
+	}
+
+	:global(.splide.is-overflow) {
+		@apply pb-8;
 	}
 
 	:global(.splide__arrow) {
@@ -131,5 +135,9 @@
 
 	:global(.splide__pagination__page.is-active) {
 		@apply bg-slate-500 dark:bg-slate-400;
+	}
+
+	.project-media-bg {
+		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(148 163 184 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
 	}
 </style>
