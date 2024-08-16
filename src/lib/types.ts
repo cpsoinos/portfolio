@@ -34,15 +34,20 @@ export interface ProjectItem {
 	links?: Link[];
 	description?: string;
 	bulletPoints?: string[];
+}
+
+type VideoGalleryItem = Array<{
+	src: string;
+	format: string;
+}>;
+
+export interface ProjectGalleryItem extends ProjectItem {
 	images?: {
 		src: string;
 		alt: string;
 		aspectRatio: number;
 	}[];
-	videos?: {
-		src: string;
-		alt: string;
-	}[];
+	videos?: VideoGalleryItem[];
 	embeds?: {
 		html: string;
 	}[];

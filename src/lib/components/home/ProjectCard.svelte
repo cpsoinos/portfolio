@@ -4,37 +4,49 @@
 	import { buildImageUrl, BUCKET_BASE_URL } from '$lib/images';
 	import { Image } from '@unpic/svelte';
 	import Icon from '$lib/components/Icon.svelte';
-	import type { ProjectItem } from '$lib/types';
+	import type { ProjectGalleryItem } from '$lib/types';
+	import { twMerge } from 'tailwind-merge';
 
-	export let project: ProjectItem;
+	export let project: ProjectGalleryItem;
+	export let mediaSide: 'left' | 'right' = 'left';
 </script>
 
-<div class="flex flex-col gap-3 rounded-lg">
-	<h3 class="font-display text-2xl text-slate-900 dark:text-slate-50">{project.title}</h3>
-	{#if project.links}
-		<ul>
-			{#each project.links as link}
-				<li>
-					<a
-						href={link.href}
-						target="_blank"
-						class="flex items-center gap-1 text-indigo-600 dark:text-indigo-400"
-					>
-						{#if link.icon}
-							<Icon icon={link.icon.light} class="inline dark:hidden" inline />
-							<Icon icon={link.icon.dark} class="hidden dark:inline" inline />
-						{/if}
-						{link.text}
-					</a>
-				</li>
-			{/each}
-		</ul>
-	{/if}
-	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-	<p class="wysiwyg">{@html project.description}</p>
+<div class={twMerge('grid items-center gap-3 rounded-lg', $$restProps.class)}>
+	<div
+		class="flex flex-col gap-3"
+		class:order-1={mediaSide === 'right'}
+		class:order-2={mediaSide === 'left'}
+	>
+		<h3 class="font-display text-2xl text-slate-900 dark:text-slate-50">{project.title}</h3>
+		{#if project.links}
+			<ul>
+				{#each project.links as link}
+					<li>
+						<a
+							href={link.href}
+							target="_blank"
+							class="flex items-center gap-1 text-indigo-600 dark:text-indigo-400"
+						>
+							{#if link.icon}
+								<Icon icon={link.icon.light} class="inline dark:hidden" inline />
+								<Icon icon={link.icon.dark} class="hidden dark:inline" inline />
+							{/if}
+							{link.text}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		{/if}
+		<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+		<p class="wysiwyg">{@html project.description}</p>
+	</div>
 
-	<div class="flex flex-col items-center gap-2">
-		{#if project.images?.length || project.videos?.length || project.embeds?.length}
+	{#if project.images?.length || project.videos?.length || project.embeds?.length}
+		<div
+			class="flex flex-col items-center gap-2"
+			class:order-1={mediaSide === 'left'}
+			class:order-2={mediaSide === 'right'}
+		>
 			<Splide
 				aria-label="Media for {project.title}"
 				options={{
@@ -61,14 +73,15 @@
 							<!-- svelte-ignore a11y-media-has-caption -->
 							<video
 								controls
-								autoplay
 								loop
 								disablepictureinpicture
 								controlslist="nodownload"
 								class="max-h-[300px] rounded"
 								height={300}
 							>
-								<source src="{BUCKET_BASE_URL}/{video.src}" type="video/webm" />
+								{#each video as { src, format }}
+									<source src="{BUCKET_BASE_URL}/{src}" type="video/{format}" />
+								{/each}
 								Your browser does not support the video tag.
 							</video>
 						</SplideSlide>
@@ -83,8 +96,8 @@
 					{/each}
 				{/if}
 			</Splide>
-		{/if}
-	</div>
+		</div>
+	{/if}
 </div>
 
 <style lang="postcss">

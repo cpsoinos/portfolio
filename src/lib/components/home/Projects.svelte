@@ -1,8 +1,43 @@
 <script lang="ts">
-	import type { ProjectItem } from '$lib/types';
 	import ProjectCard from './ProjectCard.svelte';
+	import type { ProjectGalleryItem } from '$lib/types';
+	import { twJoin } from 'tailwind-merge';
 
-	const projects: ProjectItem[] = [
+	const projects: ProjectGalleryItem[] = [
+		{
+			title: 'In-App Image Cropping Tool',
+			description:
+				'An in-app image cropping tool, embedded within a larger application. Built while working at Flowcode, using Svelte, TailwindCSS, and the Cropper.js library.',
+			videos: [
+				[
+					{
+						src: 'conversions/cropping-tool.webm',
+						format: 'webm'
+					},
+					{
+						src: 'conversions/cropping-tool.mp4',
+						format: 'mp4'
+					}
+				]
+			]
+		},
+		{
+			title: 'Builder',
+			description:
+				'A visual Conversion Suite Template builder, built while working at Flowcode. The builder allows users to create and customize templates for their campaigns. Built using Svelte/SvelteKit, TailwindCSS, and XYFlow.',
+			videos: [
+				[
+					{
+						src: 'conversions/builder.webm',
+						format: 'webm'
+					},
+					{
+						src: 'conversions/builder.mp4',
+						format: 'mp4'
+					}
+				]
+			]
+		},
 		{
 			title: 'Image Uploader',
 			links: [
@@ -30,10 +65,16 @@
 				}
 			],
 			videos: [
-				{
-					src: 'gfe-image-uploader/upload-and-crop.webm',
-					alt: 'Video demonstration of the image uploader'
-				}
+				[
+					{
+						src: 'gfe-image-uploader/upload-and-crop.mp4',
+						format: 'mp4'
+					},
+					{
+						src: 'gfe-image-uploader/upload-and-crop.webm',
+						format: 'webm'
+					}
+				]
 			]
 		},
 		{
@@ -69,15 +110,20 @@
 			description:
 				"A menu page and a calibration page used on an angled, multi-screen lobby display for Sensory Interactive's end-client Marathon Oil. Developed using NextJS and TailwindCSS, with heavy use of React-Transition-Group.",
 			videos: [
-				{
-					src: 'sensory-interactive/screen-recording.webm',
-					alt: 'Video demonstration of the Menu page of the Marathon Oil interactive lobby display for Sensory Interactive'
-				}
+				[
+					{
+						src: 'sensory-interactive/screen-recording.webm',
+						format: 'webm'
+					},
+					{
+						src: 'sensory-interactive/screen-recording.mp4',
+						format: 'mp4'
+					}
+				]
 			],
 			embeds: [
 				{
-					html: `<iframe src="https://player.vimeo.com/video/639565861?h=14cb962d7b" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/639565861">102521 Marathon Oil Lobby Display Video.mp4</a> from <a href="https://vimeo.com/sensoryinteractive">Sensory Interactive</a> on <a href="https://vimeo.com">Vimeo</a>.</p>`
+					html: `<iframe src="https://player.vimeo.com/video/639565861?h=14cb962d7b" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`
 				}
 			]
 		},
@@ -101,10 +147,16 @@
 				}
 			],
 			videos: [
-				{
-					src: 'extend-pua/handles_search-and-filter.webm',
-					alt: 'Video demonstration of the searchable table of US Senators and Representatives'
-				}
+				[
+					{
+						src: 'extend-pua/handles_search-and-filter.webm',
+						format: 'webm'
+					},
+					{
+						src: 'extend-pua/handles_search-and-filter.mp4',
+						format: 'mp4'
+					}
+				]
 			]
 		},
 		{
@@ -163,11 +215,15 @@
 
 <section id="projects" class="flex flex-col gap-6">
 	<h2 class="font-display text-4xl text-slate-900 dark:text-slate-50">Projects</h2>
-	<!-- <p class="font-mono">Here are some of the projects I've worked on outside of work.</p> -->
 
-	<div class="grid gap-8 lg:grid-cols-2">
-		{#each projects as project}
-			<ProjectCard {project} />
+	<div class="grid grid-cols-2 gap-24">
+		{#each projects as project, i}
+			{@const hasMedia = project.images?.length || project.videos?.length || project.embeds?.length}
+			<ProjectCard
+				{project}
+				mediaSide={i % 2 === 0 ? 'left' : 'right'}
+				class={twJoin(hasMedia && 'col-span-2 md:grid-cols-2')}
+			/>
 		{/each}
 	</div>
 </section>
