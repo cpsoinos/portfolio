@@ -10,7 +10,10 @@ export interface User {
 export interface Link {
 	href: string;
 	text: string;
-	icon?: string;
+	icon?: {
+		dark: string;
+		light: string;
+	};
 }
 
 export interface ExperienceItem {
@@ -31,6 +34,23 @@ export interface ProjectItem {
 	links?: Link[];
 	description?: string;
 	bulletPoints?: string[];
+}
+
+type VideoGalleryItem = Array<{
+	src: string;
+	format: string;
+}>;
+
+export interface ProjectGalleryItem extends ProjectItem {
+	images?: {
+		src: string;
+		alt: string;
+		aspectRatio: number;
+	}[];
+	videos?: VideoGalleryItem[];
+	embeds?: {
+		html: string;
+	}[];
 }
 
 export interface GithubStats {

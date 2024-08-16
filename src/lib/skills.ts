@@ -16,7 +16,6 @@ export const skills: SkillItem[] = [
 			'Tailwind CSS',
 			'Sass',
 			'Node',
-			'V8',
 			'Ruby',
 			'Ruby on Rails'
 		]
@@ -27,7 +26,7 @@ export const skills: SkillItem[] = [
 	},
 	{
 		title: 'Cloud & DevOps',
-		items: ['Cloudflare', 'AWS', 'Google Cloud', 'Vercel', 'Heroku', 'Docker']
+		items: ['Cloudflare', 'AWS', 'GCP', 'Vercel', 'Heroku', 'Docker']
 	},
 	{
 		title: 'Other',

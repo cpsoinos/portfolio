@@ -7,8 +7,14 @@
 <div class={$$props.class}>
 	<div class="flex justify-between">
 		<div class="flex flex-col gap-4">
-			<h1 class="font-display text-4xl uppercase text-indigo-600">{user.name}</h1>
+			<h1 class="font-display text-4xl uppercase text-indigo-600 dark:text-indigo-400">
+				{user.name}
+			</h1>
 		</div>
 	</div>
-	<p class="font-body text-sm text-gray-700 print:text-2xs print:leading-normal">{user.summary}</p>
+	<p
+		class="font-body text-sm text-slate-700 dark:text-slate-300 print:text-2xs print:leading-normal"
+	>
+		{user.summary}
+	</p>
 </div>

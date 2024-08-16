@@ -26,15 +26,22 @@
 		"package.json": "sort-package-json"
 	},
 	"dependencies": {
+		"@fontsource-variable/roboto-mono": "^5.0.19",
 		"@fontsource/economica": "^5.0.20",
 		"@octokit/core": "^6.1.2",
-		"posthog-js": "^1.153.0"
+		"@splidejs/svelte-splide": "^0.2.9",
+		"@unpic/svelte": "^0.0.53",
+		"posthog-js": "^1.153.0",
+		"svelte-headlessui": "^0.0.42",
+		"svelte-transition": "^0.0.17",
+		"tailwind-merge": "^2.4.0"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20240725.0",
 		"@dword-design/eslint-plugin-import-alias": "^5.0.0",
 		"@iconify/svelte": "^4.0.2",
 		"@sveltejs/adapter-cloudflare": "^4.7.0",
+		"@sveltejs/enhanced-img": "^0.3.1",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/eslint": "^9.6.0",

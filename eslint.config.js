@@ -3,10 +3,13 @@ import ts from 'typescript-eslint';
 import svelte from 'eslint-plugin-svelte';
 import prettier from 'eslint-config-prettier';
 import globals from 'globals';
-import importAlias from '@dword-design/eslint-plugin-import-alias';
 import oxlint from 'eslint-plugin-oxlint';
+import svelteConfig from './svelte.config.js';
+import { createRequire } from 'node:module';
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
+const require = createRequire(import.meta.url);
+
+/** @type {import('eslint').Linter.Config[]} */
 export default [
 	js.configs.recommended,
 	...ts.configs.recommended,
@@ -23,7 +26,7 @@ export default [
 		}
 	},
 	{
-		plugins: { '@dword-design/import-alias': importAlias },
+		plugins: { '@dword-design/import-alias': require('@dword-design/eslint-plugin-import-alias') },
 		rules: {
 			'@dword-design/import-alias/prefer-alias': [
 				'error',
@@ -46,10 +49,11 @@ export default [
 		}
 	},
 	{
-		files: ['**/*.svelte'],
+		files: ['**/*.svelte', '*.svelte'],
 		languageOptions: {
 			parserOptions: {
-				parser: ts.parser
+				parser: ts.parser,
+				svelteConfig
 			}
 		}
 	},

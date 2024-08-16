@@ -1,23 +1,18 @@
 <script lang="ts">
 	import type { SkillItem } from '$lib/types';
 	import ResumeSection from './ResumeSection.svelte';
+	import SkillSection from './SkillSection.svelte';
 
 	export let items: SkillItem[];
+
+	$: [languagesAndFrameworks, databases, cloudAndDevops, other] = items;
 </script>
 
 <ResumeSection sectionTitle="Skills" class={$$props.class}>
-	<div class="flex flex-col gap-4 print:gap-2">
-		{#each items as skill (skill.title)}
-			<div>
-				<h3 class="text-sm uppercase print:text-xs">{skill.title}</h3>
-				<ul class="list-disc ps-6">
-					{#each skill.items as item}
-						<li class="text-sm text-gray-900 print:text-2xs print:leading-normal">
-							{item}
-						</li>
-					{/each}
-				</ul>
-			</div>
-		{/each}
+	<div class="grid grid-cols-2 gap-4 print:gap-2">
+		<SkillSection skill={languagesAndFrameworks} columns={2} class="col-span-2" />
+		<SkillSection skill={databases} />
+		<SkillSection skill={cloudAndDevops} />
+		<SkillSection skill={other} class="col-span-2" />
 	</div>
 </ResumeSection>
