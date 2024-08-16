@@ -16,5 +16,8 @@
 		<li>
 			<a href="https://github.com/cpsoinos" target="_blank">GitHub</a>
 		</li>
+		<li>
+			<a href="/resume">Resume</a>
+		</li>
 	</ul>
 </section>
