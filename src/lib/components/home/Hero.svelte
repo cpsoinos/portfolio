@@ -2,9 +2,9 @@
 	import { buildImageUrl } from '$lib/images';
 	import { Image } from '@unpic/svelte';
 
-	const title = "Hi. I'm Corey.";
+	const title = 'Hi. I’m Corey.';
 	const subtitle =
-		"I'm a full-stack software enginer specializing in frontend web development. I have a passion for great, accessible UX.";
+		'I’m a full-stack software enginer specializing in frontend web development. I have a passion for great, accessible UX.';
 
 	const heroImgUrl = buildImageUrl('hero-illustration.png');
 </script>

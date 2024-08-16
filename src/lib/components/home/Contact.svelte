@@ -4,7 +4,7 @@
 
 <section id="contact" class="flex flex-col gap-6 font-mono">
 	<h2 class="font-display text-4xl text-slate-900 dark:text-slate-50">Contact</h2>
-	<p>Let's connect!</p>
+	<p>Let’s connect!</p>
 
 	<div class="flex flex-col gap-8 md:gap-12">
 		<div class="text-center">

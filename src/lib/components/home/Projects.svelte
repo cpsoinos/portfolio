@@ -24,7 +24,7 @@
 		{
 			title: 'Conversion Suite Template Builder',
 			description:
-				'A visual flow template builder, built while I was working at <a href="https://flowcode.com" target="_blank" rel="noopener noreferrer">Flowcode<span class="material-symbols--open-in-new ml-1 print:hidden"></span></a>. The builder allows users to create and customize templates for their campaigns. Built using Svelte/SvelteKit, TailwindCSS, and XYFlow.',
+				'A visual, flowchart-like template builder, built while I was working at <a href="https://flowcode.com" target="_blank" rel="noopener noreferrer">Flowcode<span class="material-symbols--open-in-new ml-1 print:hidden"></span></a>. Allows users to create and customize templates for their campaigns. Built using Svelte/SvelteKit, TailwindCSS, and XYFlow.',
 			videos: [
 				[
 					{
@@ -80,7 +80,7 @@
 		{
 			title: 'Nuxtify',
 			description:
-				'A fun side project experimenting with Nuxt and TailwindCSS, with the goal of replicating the appearance of Spotify&#8217;s <span class="italic">Now Playing</span> mobile view.',
+				'A fun side project experimenting with Nuxt and TailwindCSS, with the goal of replicating the appearance of Spotify’s <span class="italic">Now Playing</span> mobile view.',
 			links: [
 				{
 					href: 'https://nuxtify.anderapps.com/now-playing',
@@ -108,7 +108,7 @@
 		{
 			title: 'Interactive Lobby Display',
 			description:
-				"A menu page and a calibration page used on an angled, multi-screen lobby display for Sensory Interactive's end-client Marathon Oil. Developed using NextJS and TailwindCSS, with heavy use of React-Transition-Group.",
+				'A menu page and a calibration page used on an angled, multi-screen lobby display for Sensory Interactive’s end-client Marathon Oil. Developed using NextJS and TailwindCSS, with heavy use of React-Transition-Group.',
 			videos: [
 				[
 					{
@@ -215,7 +215,7 @@
 
 <section id="projects" class="flex flex-col gap-6">
 	<h2 class="font-display text-4xl text-slate-900 dark:text-slate-50">Projects</h2>
-	<p class="font-mono">Here's a sample of some of the projects I've worked on in the past.</p>
+	<p class="font-mono">Here’s a sample of some of the projects I’ve worked on in the past.</p>
 
 	<div class="grid grid-cols-2 gap-24">
 		{#each projects as project, i}
