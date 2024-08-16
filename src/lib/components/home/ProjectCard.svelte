@@ -11,7 +11,7 @@
 	export let mediaSide: 'left' | 'right' = 'left';
 </script>
 
-<div class={twMerge('grid items-center gap-3 rounded-lg md:gap-8', $$restProps.class)}>
+<div class={twMerge('grid items-center gap-3 rounded-lg font-mono md:gap-8', $$restProps.class)}>
 	<div
 		class="flex flex-col gap-3"
 		class:md:order-1={mediaSide === 'left'}

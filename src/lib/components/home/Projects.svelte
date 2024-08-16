@@ -215,6 +215,7 @@
 
 <section id="projects" class="flex flex-col gap-6">
 	<h2 class="font-display text-4xl text-slate-900 dark:text-slate-50">Projects</h2>
+	<p class="font-mono">Here's a sample of some of the projects I've worked on in the past.</p>
 
 	<div class="grid grid-cols-2 gap-24">
 		{#each projects as project, i}
