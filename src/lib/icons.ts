@@ -29,6 +29,7 @@ const ICONS = [
 	'lucide:more-vertical',
 	'mdi:location',
 	'mdi:open-in-new',
+	'pepicons-pop:cv',
 	'ph:moon-duotone',
 	'ph:sun-duotone',
 	'skill-icons:aws-dark',

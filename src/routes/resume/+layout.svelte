@@ -1,4 +1,4 @@
-<div class="resume">
+<div class="resume font-body">
 	<slot />
 </div>
 
@@ -7,9 +7,5 @@
 		@page {
 			size: letter;
 		}
-	}
-
-	.resume {
-		@apply font-body;
 	}
 </style>
